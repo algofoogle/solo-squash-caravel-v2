@@ -37,13 +37,13 @@ module solo_squash_caravel_gf180 (blue,
  input wb_rst_i;
  output [37:0] io_oeb;
 
- wire net28;
- wire net38;
- wire net39;
+ wire net30;
  wire net40;
  wire net41;
- wire net29;
  wire net42;
+ wire net28;
+ wire net31;
+ wire net29;
  wire net43;
  wire net44;
  wire net45;
@@ -53,7 +53,7 @@ module solo_squash_caravel_gf180 (blue,
  wire net49;
  wire net50;
  wire net51;
- wire net30;
+ wire net32;
  wire net52;
  wire net53;
  wire net54;
@@ -62,13 +62,13 @@ module solo_squash_caravel_gf180 (blue,
  wire net57;
  wire net58;
  wire net59;
- wire net31;
- wire net32;
  wire net33;
  wire net34;
  wire net35;
  wire net36;
  wire net37;
+ wire net38;
+ wire net39;
  wire _0000_;
  wire _0001_;
  wire _0002_;
@@ -1589,15 +1589,11 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_0_0_324 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_0_324 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_0_332 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_0_342 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_0_336 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -1889,7 +1885,11 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_11_342 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_11_342 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_11_346 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -1985,19 +1985,23 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_0_12_321 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_0_12_321 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_12_329 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_12_333 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_12_337 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
  gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_12_34 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_12_341 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_12_343 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -2077,19 +2081,19 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_0_13_319 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_0_13_319 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_0_13_335 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_13_327 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_13_343 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_13_331 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_13_347 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_13_333 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5361,7 +5365,11 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_3_338 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_3_338 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_3_342 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5649,11 +5657,11 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_42_207 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_32 FILLER_0_42_2 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_0_42_22 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_42_207 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5686,10 +5694,6 @@ module solo_squash_caravel_gf180 (blue,
     .VPW(vss),
     .VSS(vss));
  gf180mcu_fd_sc_mcu7t5v0__fillcap_32 FILLER_0_42_269 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_42_30 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5730,10 +5734,6 @@ module solo_squash_caravel_gf180 (blue,
     .VPW(vss),
     .VSS(vss));
  gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_0_42_37 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_0_42_6 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5809,23 +5809,11 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_32 FILLER_0_43_282 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_64 FILLER_0_43_282 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_0_43_314 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_0_43_330 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_43_338 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_43_342 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_43_346 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5869,7 +5857,7 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_32 FILLER_0_44_2 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_8 FILLER_0_44_22 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5882,6 +5870,10 @@ module solo_squash_caravel_gf180 (blue,
     .VPW(vss),
     .VSS(vss));
  gf180mcu_fd_sc_mcu7t5v0__fillcap_32 FILLER_0_44_280 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_44_30 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -5914,6 +5906,10 @@ module solo_squash_caravel_gf180 (blue,
     .VPW(vss),
     .VSS(vss));
  gf180mcu_fd_sc_mcu7t5v0__fillcap_32 FILLER_0_44_37 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_16 FILLER_0_44_6 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -6205,15 +6201,11 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_48_333 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_48_333 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_48_337 (.VDD(vdd),
-    .VNW(vdd),
-    .VPW(vss),
-    .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_48_339 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_48_335 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -6433,7 +6425,11 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_5_338 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_5_338 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_5_342 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -6537,7 +6533,15 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_6_333 (.VDD(vdd),
+ gf180mcu_fd_sc_mcu7t5v0__fillcap_4 FILLER_0_6_333 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fill_2 FILLER_0_6_337 (.VDD(vdd),
+    .VNW(vdd),
+    .VPW(vss),
+    .VSS(vss));
+ gf180mcu_fd_sc_mcu7t5v0__fill_1 FILLER_0_6_339 (.VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
@@ -12199,7 +12203,7 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 output10 (.I(net10),
+ gf180mcu_fd_sc_mcu7t5v0__buf_3 output10 (.I(net10),
     .Z(debug_gpio_ready),
     .VDD(vdd),
     .VNW(vdd),
@@ -12277,7 +12281,7 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 output9 (.I(net26),
+ gf180mcu_fd_sc_mcu7t5v0__clkbuf_4 output9 (.I(net26),
     .Z(debug_design_reset),
     .VDD(vdd),
     .VNW(vdd),
@@ -12293,163 +12297,163 @@ module solo_squash_caravel_gf180 (blue,
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_30 (.ZN(net30),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_30 (.Z(net30),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_31 (.ZN(net31),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_31 (.Z(net31),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_32 (.ZN(net32),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_32 (.Z(net32),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_33 (.ZN(net33),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_33 (.Z(net33),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_34 (.ZN(net34),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_34 (.Z(net34),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_35 (.ZN(net35),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_35 (.Z(net35),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_36 (.ZN(net36),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_36 (.Z(net36),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_37 (.ZN(net37),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_37 (.Z(net37),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_38 (.ZN(net38),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_38 (.Z(net38),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_39 (.ZN(net39),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_39 (.Z(net39),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_40 (.ZN(net40),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_40 (.Z(net40),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_41 (.ZN(net41),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_41 (.Z(net41),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_42 (.ZN(net42),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_42 (.Z(net42),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_43 (.ZN(net43),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_43 (.Z(net43),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_44 (.ZN(net44),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_44 (.Z(net44),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_45 (.ZN(net45),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_45 (.Z(net45),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_46 (.ZN(net46),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_46 (.Z(net46),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_47 (.ZN(net47),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_47 (.Z(net47),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_48 (.ZN(net48),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_48 (.Z(net48),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_49 (.ZN(net49),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_49 (.Z(net49),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_50 (.ZN(net50),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_50 (.Z(net50),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_51 (.ZN(net51),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_51 (.Z(net51),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_52 (.ZN(net52),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_52 (.Z(net52),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_53 (.ZN(net53),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_53 (.Z(net53),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_54 (.ZN(net54),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_54 (.Z(net54),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_55 (.ZN(net55),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_55 (.Z(net55),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_56 (.ZN(net56),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_56 (.Z(net56),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_57 (.ZN(net57),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_57 (.Z(net57),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_58 (.ZN(net58),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_58 (.Z(net58),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- gf180mcu_fd_sc_mcu7t5v0__tiel solo_squash_caravel_gf180_59 (.ZN(net59),
+ gf180mcu_fd_sc_mcu7t5v0__tieh solo_squash_caravel_gf180_59 (.Z(net59),
     .VDD(vdd),
     .VNW(vdd),
     .VPW(vss),
     .VSS(vss));
- assign io_oeb[0] = net28;
- assign io_oeb[10] = net38;
- assign io_oeb[11] = net39;
- assign io_oeb[12] = net40;
- assign io_oeb[19] = net41;
- assign io_oeb[1] = net29;
- assign io_oeb[20] = net42;
+ assign io_oeb[0] = net30;
+ assign io_oeb[10] = net40;
+ assign io_oeb[11] = net41;
+ assign io_oeb[12] = net42;
+ assign io_oeb[19] = net28;
+ assign io_oeb[1] = net31;
+ assign io_oeb[20] = net29;
  assign io_oeb[21] = net43;
  assign io_oeb[22] = net44;
  assign io_oeb[23] = net45;
@@ -12459,7 +12463,7 @@ module solo_squash_caravel_gf180 (blue,
  assign io_oeb[27] = net49;
  assign io_oeb[28] = net50;
  assign io_oeb[29] = net51;
- assign io_oeb[2] = net30;
+ assign io_oeb[2] = net32;
  assign io_oeb[30] = net52;
  assign io_oeb[31] = net53;
  assign io_oeb[32] = net54;
@@ -12468,11 +12472,11 @@ module solo_squash_caravel_gf180 (blue,
  assign io_oeb[35] = net57;
  assign io_oeb[36] = net58;
  assign io_oeb[37] = net59;
- assign io_oeb[3] = net31;
- assign io_oeb[4] = net32;
- assign io_oeb[5] = net33;
- assign io_oeb[6] = net34;
- assign io_oeb[7] = net35;
- assign io_oeb[8] = net36;
- assign io_oeb[9] = net37;
+ assign io_oeb[3] = net33;
+ assign io_oeb[4] = net34;
+ assign io_oeb[5] = net35;
+ assign io_oeb[6] = net36;
+ assign io_oeb[7] = net37;
+ assign io_oeb[8] = net38;
+ assign io_oeb[9] = net39;
 endmodule

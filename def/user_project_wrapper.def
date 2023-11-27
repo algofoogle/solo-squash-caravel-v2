@@ -4237,24 +4237,24 @@ END SPECIALNETS
 NETS 416 ;
     - io_in[0] ( PIN io_in[0] ) + USE SIGNAL ;
     - io_in[10] ( PIN io_in[10] ) ( solo_squash_caravel_gf180 new_game_n ) + USE SIGNAL
-      + ROUTED Metal3 ( 2415280 2769200 ) ( 2441040 * 0 )
-      NEW Metal4 ( 2415280 2769200 ) ( * 4035920 )
+      + ROUTED Metal4 ( 2415280 2769200 ) ( * 4035920 )
       NEW Metal3 ( 2415280 4035920 ) ( 5956720 * 0 )
+      NEW Metal3 ( 2415280 2769200 ) ( 2441040 * 0 )
       NEW Metal3 ( 2415280 4035920 ) Via3_HV
       NEW Metal3 ( 2415280 2769200 ) Via3_HV ;
     - io_in[11] ( PIN io_in[11] ) ( solo_squash_caravel_gf180 down_key_n ) + USE SIGNAL
-      + ROUTED Metal3 ( 2435440 2722160 ) ( 2441040 * 0 )
-      NEW Metal4 ( 2435440 2722160 ) ( * 4410000 )
-      NEW Metal4 ( 5913040 4410000 ) ( * 4432400 )
-      NEW Metal3 ( 5913040 4432400 ) ( 5956720 * 0 )
-      NEW Metal3 ( 2435440 4410000 ) ( 5913040 * )
+      + ROUTED Metal4 ( 2435440 2722160 ) ( * 4410000 )
+      NEW Metal4 ( 5901840 4410000 ) ( * 4432400 )
+      NEW Metal3 ( 5901840 4432400 ) ( 5956720 * 0 )
+      NEW Metal3 ( 2435440 2722160 ) ( 2441040 * 0 )
+      NEW Metal3 ( 2435440 4410000 ) ( 5901840 * )
       NEW Metal3 ( 2435440 2722160 ) Via3_HV
       NEW Metal3 ( 2435440 4410000 ) Via3_HV
-      NEW Metal3 ( 5913040 4410000 ) Via3_HV
-      NEW Metal3 ( 5913040 4432400 ) Via3_HV ;
+      NEW Metal3 ( 5901840 4410000 ) Via3_HV
+      NEW Metal3 ( 5901840 4432400 ) Via3_HV ;
     - io_in[12] ( PIN io_in[12] ) ( solo_squash_caravel_gf180 up_key_n ) + USE SIGNAL
-      + ROUTED Metal3 ( 2417520 2715440 ) ( 2441040 * 0 )
-      NEW Metal4 ( 2417520 2715440 ) ( * 4828880 )
+      + ROUTED Metal4 ( 2417520 2715440 ) ( * 4828880 )
+      NEW Metal3 ( 2417520 2715440 ) ( 2441040 * 0 )
       NEW Metal3 ( 2417520 4828880 ) ( 5956720 * 0 )
       NEW Metal3 ( 2417520 2715440 ) Via3_HV
       NEW Metal3 ( 2417520 4828880 ) Via3_HV ;
@@ -4291,339 +4291,334 @@ NETS 416 ;
     - io_in[6] ( PIN io_in[6] ) + USE SIGNAL ;
     - io_in[7] ( PIN io_in[7] ) + USE SIGNAL ;
     - io_in[8] ( PIN io_in[8] ) ( solo_squash_caravel_gf180 ext_reset_n ) + USE SIGNAL
-      + ROUTED Metal3 ( 5911920 3242960 ) ( 5956720 * 0 )
-      NEW Metal4 ( 5911920 2782640 ) ( * 3242960 )
-      NEW Metal3 ( 2857680 2782640 0 ) ( 5911920 * )
-      NEW Metal3 ( 5911920 2782640 ) Via3_HV
-      NEW Metal3 ( 5911920 3242960 ) Via3_HV ;
+      + ROUTED Metal3 ( 5913040 3242960 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5913040 2782640 ) ( * 3242960 )
+      NEW Metal3 ( 2857680 2782640 0 ) ( 5913040 * )
+      NEW Metal3 ( 5913040 2782640 ) Via3_HV
+      NEW Metal3 ( 5913040 3242960 ) Via3_HV ;
     - io_in[9] ( PIN io_in[9] ) ( solo_squash_caravel_gf180 pause_n ) + USE SIGNAL
-      + ROUTED Metal3 ( 5905200 3639440 ) ( 5956720 * 0 )
-      NEW Metal2 ( 2642640 2502640 ) ( * 2520560 0 )
+      + ROUTED Metal2 ( 2642640 2502640 ) ( * 2520560 0 )
+      NEW Metal3 ( 5905200 3639440 ) ( 5956720 * 0 )
       NEW Metal2 ( 5905200 2502640 ) ( * 3639440 )
       NEW Metal3 ( 2642640 2502640 ) ( 5905200 * )
-      NEW Metal2 ( 5905200 3639440 ) Via2_VH
       NEW Metal2 ( 2642640 2502640 ) Via2_VH
-      NEW Metal2 ( 5905200 2502640 ) Via2_VH ;
+      NEW Metal2 ( 5905200 2502640 ) Via2_VH
+      NEW Metal2 ( 5905200 3639440 ) Via2_VH ;
     - io_oeb[0] ( PIN io_oeb[0] ) ( solo_squash_caravel_gf180 io_oeb[0] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2890160 0 ) ( 2882320 * )
-      NEW Metal4 ( 2882320 336560 ) ( * 2890160 )
-      NEW Metal3 ( 2882320 336560 ) ( 5956720 * 0 )
-      NEW Metal3 ( 2882320 336560 ) Via3_HV
-      NEW Metal3 ( 2882320 2890160 ) Via3_HV ;
+      + ROUTED Metal3 ( 2857680 2957360 0 ) ( 2881200 * )
+      NEW Metal4 ( 2881200 336560 ) ( * 2957360 )
+      NEW Metal3 ( 2881200 336560 ) ( 5956720 * 0 )
+      NEW Metal3 ( 2881200 336560 ) Via3_HV
+      NEW Metal3 ( 2881200 2957360 ) Via3_HV ;
     - io_oeb[10] ( PIN io_oeb[10] ) ( solo_squash_caravel_gf180 io_oeb[10] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2416400 2581040 ) ( 2441040 * 0 )
-      NEW Metal4 ( 2416400 2581040 ) ( * 4301360 )
+      + ROUTED Metal4 ( 2416400 2554160 ) ( * 4301360 )
+      NEW Metal3 ( 2416400 2554160 ) ( 2441040 * 0 )
       NEW Metal3 ( 2416400 4301360 ) ( 5956720 * 0 )
-      NEW Metal3 ( 2416400 4301360 ) Via3_HV
-      NEW Metal3 ( 2416400 2581040 ) Via3_HV ;
+      NEW Metal3 ( 2416400 2554160 ) Via3_HV
+      NEW Metal3 ( 2416400 4301360 ) Via3_HV ;
     - io_oeb[11] ( PIN io_oeb[11] ) ( solo_squash_caravel_gf180 io_oeb[11] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2418640 2554160 ) ( 2441040 * 0 )
-      NEW Metal4 ( 2418640 2554160 ) ( * 4696720 )
+      + ROUTED Metal4 ( 2418640 2560880 ) ( * 4696720 )
+      NEW Metal3 ( 2418640 2560880 ) ( 2441040 * 0 )
       NEW Metal3 ( 2418640 4696720 ) ( 5956720 * 0 )
-      NEW Metal3 ( 2418640 2554160 ) Via3_HV
+      NEW Metal3 ( 2418640 2560880 ) Via3_HV
       NEW Metal3 ( 2418640 4696720 ) Via3_HV ;
     - io_oeb[12] ( PIN io_oeb[12] ) ( solo_squash_caravel_gf180 io_oeb[12] ) + USE SIGNAL
-      + ROUTED Metal3 ( 5908560 5093200 ) ( 5956720 * 0 )
-      NEW Metal4 ( 5908560 2923760 ) ( * 5093200 )
-      NEW Metal3 ( 2857680 2923760 0 ) ( 5908560 * )
-      NEW Metal3 ( 5908560 2923760 ) Via3_HV
-      NEW Metal3 ( 5908560 5093200 ) Via3_HV ;
+      + ROUTED Metal3 ( 5909680 5093200 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5909680 2923760 ) ( * 5093200 )
+      NEW Metal3 ( 2857680 2923760 0 ) ( 5909680 * )
+      NEW Metal3 ( 5909680 2923760 ) Via3_HV
+      NEW Metal3 ( 5909680 5093200 ) Via3_HV ;
     - io_oeb[13] ( PIN io_oeb[13] ) ( solo_squash_caravel_gf180 io_oeb[13] ) + USE SIGNAL
-      + ROUTED Metal3 ( 5906320 5489680 ) ( 5956720 * 0 )
-      NEW Metal4 ( 5906320 2675120 ) ( * 5489680 )
-      NEW Metal3 ( 2857680 2675120 0 ) ( 5906320 * )
-      NEW Metal3 ( 5906320 2675120 ) Via3_HV
-      NEW Metal3 ( 5906320 5489680 ) Via3_HV ;
+      + ROUTED Metal3 ( 5907440 5489680 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5907440 2675120 ) ( * 5489680 )
+      NEW Metal3 ( 2857680 2675120 0 ) ( 5907440 * )
+      NEW Metal3 ( 5907440 5489680 ) Via3_HV
+      NEW Metal3 ( 5907440 2675120 ) Via3_HV ;
     - io_oeb[14] ( PIN io_oeb[14] ) ( solo_squash_caravel_gf180 io_oeb[14] ) + USE SIGNAL
       + ROUTED Metal3 ( 5905200 5886160 ) ( 5956720 * 0 )
       NEW Metal4 ( 5905200 2695280 ) ( * 5886160 )
       NEW Metal3 ( 2857680 2695280 0 ) ( 5905200 * )
-      NEW Metal3 ( 5905200 2695280 ) Via3_HV
-      NEW Metal3 ( 5905200 5886160 ) Via3_HV ;
+      NEW Metal3 ( 5905200 5886160 ) Via3_HV
+      NEW Metal3 ( 5905200 2695280 ) Via3_HV ;
     - io_oeb[15] ( PIN io_oeb[15] ) ( solo_squash_caravel_gf180 io_oeb[15] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2702000 0 ) ( 5405680 * )
-      NEW Metal2 ( 5405680 2702000 ) ( * 5956720 0 )
+      + ROUTED Metal2 ( 5405680 2702000 ) ( * 5956720 0 )
+      NEW Metal3 ( 2857680 2702000 0 ) ( 5405680 * )
       NEW Metal2 ( 5405680 2702000 ) Via2_VH ;
     - io_oeb[16] ( PIN io_oeb[16] ) ( solo_squash_caravel_gf180 io_oeb[16] ) + USE SIGNAL
       + ROUTED Metal2 ( 4743760 2688560 ) ( * 5956720 0 )
       NEW Metal3 ( 2857680 2688560 0 ) ( 4743760 * )
       NEW Metal2 ( 4743760 2688560 ) Via2_VH ;
     - io_oeb[17] ( PIN io_oeb[17] ) ( solo_squash_caravel_gf180 io_oeb[17] ) + USE SIGNAL
-      + ROUTED Metal2 ( 4082960 2708720 ) ( * 5956720 0 )
-      NEW Metal3 ( 2857680 2708720 0 ) ( 4082960 * )
+      + ROUTED Metal3 ( 2857680 2708720 0 ) ( 4082960 * )
+      NEW Metal2 ( 4082960 2708720 ) ( * 5956720 0 )
       NEW Metal2 ( 4082960 2708720 ) Via2_VH ;
     - io_oeb[18] ( PIN io_oeb[18] ) ( solo_squash_caravel_gf180 io_oeb[18] ) + USE SIGNAL
       + ROUTED Metal3 ( 2857680 2681840 0 ) ( 3419920 * )
       NEW Metal2 ( 3419920 2681840 ) ( * 5956720 0 )
       NEW Metal2 ( 3419920 2681840 ) Via2_VH ;
     - io_oeb[19] ( PIN io_oeb[19] ) ( solo_squash_caravel_gf180 io_oeb[19] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2641520 0 ) ( * 2646000 )
-      NEW Metal3 ( 2857680 2646000 ) ( 2858800 * )
-      NEW Metal2 ( 2858800 2646000 ) ( * 2971920 )
-      NEW Metal3 ( 2822400 2971920 ) ( 2858800 * )
-      NEW Metal3 ( 2758000 2973040 ) ( 2822400 * )
-      NEW Metal3 ( 2822400 2971920 ) ( * 2973040 )
-      NEW Metal2 ( 2758000 2973040 ) ( * 5956720 0 )
-      NEW Metal2 ( 2858800 2646000 ) Via2_VH
-      NEW Metal2 ( 2858800 2971920 ) Via2_VH
-      NEW Metal2 ( 2758000 2973040 ) Via2_VH ;
+      + ROUTED Metal3 ( 2857680 2554160 0 ) ( * 2558640 )
+      NEW Metal2 ( 2857680 2558640 ) ( * 2971920 )
+      NEW Metal3 ( 2758000 2971920 ) ( 2857680 * )
+      NEW Metal2 ( 2758000 2971920 ) ( * 5956720 0 )
+      NEW Metal2 ( 2857680 2558640 ) Via2_VH
+      NEW Metal2 ( 2857680 2971920 ) Via2_VH
+      NEW Metal2 ( 2758000 2971920 ) Via2_VH ;
     - io_oeb[1] ( PIN io_oeb[1] ) ( solo_squash_caravel_gf180 io_oeb[1] ) + USE SIGNAL
       + ROUTED Metal3 ( 2770320 731920 ) ( 5956720 * 0 )
       NEW Metal2 ( 2770320 731920 ) ( * 2520560 0 )
       NEW Metal2 ( 2770320 731920 ) Via2_VH ;
     - io_oeb[20] ( PIN io_oeb[20] ) ( solo_squash_caravel_gf180 io_oeb[20] ) + USE SIGNAL
-      + ROUTED Metal2 ( 2849840 2951760 ) ( 2852080 * )
-      NEW Metal2 ( 2852080 2948400 ) ( * 2951760 )
-      NEW Metal3 ( 2852080 2943920 0 ) ( * 2948400 )
-      NEW Metal2 ( 2096080 2951760 ) ( * 5956720 0 )
-      NEW Metal3 ( 2096080 2951760 ) ( 2849840 * )
-      NEW Metal2 ( 2849840 2951760 ) Via2_VH
-      NEW Metal2 ( 2852080 2948400 ) Via2_VH
-      NEW Metal2 ( 2096080 2951760 ) Via2_VH ;
+      + ROUTED Metal3 ( 2856560 2560880 0 ) ( * 2565360 )
+      NEW Metal2 ( 2096080 2969680 ) ( * 5956720 0 )
+      NEW Metal2 ( 2856560 2565360 ) ( * 2969680 )
+      NEW Metal3 ( 2096080 2969680 ) ( 2856560 * )
+      NEW Metal2 ( 2856560 2565360 ) Via2_VH
+      NEW Metal2 ( 2096080 2969680 ) Via2_VH
+      NEW Metal2 ( 2856560 2969680 ) Via2_VH ;
     - io_oeb[21] ( PIN io_oeb[21] ) ( solo_squash_caravel_gf180 io_oeb[21] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2601200 0 ) ( * 2603440 )
-      NEW Metal2 ( 1434160 2969680 ) ( * 5956720 0 )
-      NEW Metal2 ( 2857680 2603440 ) ( * 2969680 )
-      NEW Metal3 ( 1434160 2969680 ) ( 2857680 * )
-      NEW Metal2 ( 2857680 2603440 ) Via2_VH
-      NEW Metal2 ( 1434160 2969680 ) Via2_VH
-      NEW Metal2 ( 2857680 2969680 ) Via2_VH ;
+      + ROUTED Metal3 ( 2857680 2648240 0 ) ( * 2652720 )
+      NEW Metal3 ( 2857680 2652720 ) ( 2858800 * )
+      NEW Metal2 ( 1434160 2968560 ) ( * 5956720 0 )
+      NEW Metal2 ( 2858800 2652720 ) ( * 2966320 )
+      NEW Metal3 ( 1434160 2968560 ) ( 2671200 * )
+      NEW Metal3 ( 2671200 2966320 ) ( * 2968560 )
+      NEW Metal3 ( 2671200 2966320 ) ( 2858800 * )
+      NEW Metal2 ( 2858800 2652720 ) Via2_VH
+      NEW Metal2 ( 1434160 2968560 ) Via2_VH
+      NEW Metal2 ( 2858800 2966320 ) Via2_VH ;
     - io_oeb[22] ( PIN io_oeb[22] ) ( solo_squash_caravel_gf180 io_oeb[22] ) + USE SIGNAL
-      + ROUTED Metal2 ( 774480 5905200 ) ( * 5956720 0 )
-      NEW Metal3 ( 2857680 2917040 0 ) ( 2873360 * )
-      NEW Metal2 ( 2873360 2917040 ) ( * 2970800 )
-      NEW Metal3 ( 774480 5905200 ) ( 2494800 * )
-      NEW Metal2 ( 2494800 2970800 ) ( * 5905200 )
-      NEW Metal3 ( 2494800 2970800 ) ( 2873360 * )
-      NEW Metal2 ( 774480 5905200 ) Via2_VH
-      NEW Metal2 ( 2873360 2917040 ) Via2_VH
-      NEW Metal2 ( 2873360 2970800 ) Via2_VH
-      NEW Metal2 ( 2494800 5905200 ) Via2_VH
-      NEW Metal2 ( 2494800 2970800 ) Via2_VH ;
+      + ROUTED Metal2 ( 774480 5906320 ) ( * 5956720 0 )
+      NEW Metal2 ( 2873360 2950640 ) ( * 2998800 )
+      NEW Metal3 ( 2857680 2950640 0 ) ( 2873360 * )
+      NEW Metal3 ( 774480 5906320 ) ( 2528400 * )
+      NEW Metal2 ( 2528400 2998800 ) ( * 5906320 )
+      NEW Metal3 ( 2528400 2998800 ) ( 2873360 * )
+      NEW Metal2 ( 774480 5906320 ) Via2_VH
+      NEW Metal2 ( 2873360 2998800 ) Via2_VH
+      NEW Metal2 ( 2873360 2950640 ) Via2_VH
+      NEW Metal2 ( 2528400 5906320 ) Via2_VH
+      NEW Metal2 ( 2528400 2998800 ) Via2_VH ;
     - io_oeb[23] ( PIN io_oeb[23] ) ( solo_squash_caravel_gf180 io_oeb[23] ) + USE SIGNAL
-      + ROUTED Metal2 ( 110320 2968560 ) ( * 5956720 0 )
-      NEW Metal3 ( 2856560 2547440 0 ) ( * 2551920 )
-      NEW Metal2 ( 2856560 2551920 ) ( * 2968560 )
-      NEW Metal3 ( 110320 2968560 ) ( 2856560 * )
-      NEW Metal2 ( 110320 2968560 ) Via2_VH
-      NEW Metal2 ( 2856560 2551920 ) Via2_VH
-      NEW Metal2 ( 2856560 2968560 ) Via2_VH ;
+      + ROUTED Metal3 ( 2857680 2601200 0 ) ( 2874480 * )
+      NEW Metal2 ( 2874480 2601200 ) ( * 2999920 )
+      NEW Metal2 ( 112560 5905200 ) ( * 5956720 0 )
+      NEW Metal3 ( 112560 5905200 ) ( 2494800 * )
+      NEW Metal2 ( 2494800 2999920 ) ( * 5905200 )
+      NEW Metal3 ( 2494800 2999920 ) ( 2874480 * )
+      NEW Metal2 ( 2874480 2601200 ) Via2_VH
+      NEW Metal2 ( 2874480 2999920 ) Via2_VH
+      NEW Metal2 ( 112560 5905200 ) Via2_VH
+      NEW Metal2 ( 2494800 5905200 ) Via2_VH
+      NEW Metal2 ( 2494800 2999920 ) Via2_VH ;
     - io_oeb[24] ( PIN io_oeb[24] ) ( solo_squash_caravel_gf180 io_oeb[24] ) + USE SIGNAL
-      + ROUTED Metal3 ( 3920 5589360 0 ) ( 42000 * )
-      NEW Metal2 ( 42000 2999920 ) ( * 5589360 )
-      NEW Metal2 ( 2521680 2974160 0 ) ( * 2999920 )
-      NEW Metal3 ( 42000 2999920 ) ( 2521680 * )
-      NEW Metal2 ( 42000 2999920 ) Via2_VH
-      NEW Metal2 ( 42000 5589360 ) Via2_VH
-      NEW Metal2 ( 2521680 2999920 ) Via2_VH ;
+      + ROUTED Metal4 ( 2578800 3001040 ) ( * 5589360 )
+      NEW Metal4 ( 2874480 2930480 ) ( * 3001040 )
+      NEW Metal3 ( 2857680 2930480 0 ) ( 2874480 * )
+      NEW Metal3 ( 3920 5589360 0 ) ( 2578800 * )
+      NEW Metal3 ( 2578800 3001040 ) ( 2874480 * )
+      NEW Metal3 ( 2578800 3001040 ) Via3_HV
+      NEW Metal3 ( 2578800 5589360 ) Via3_HV
+      NEW Metal3 ( 2874480 3001040 ) Via3_HV
+      NEW Metal3 ( 2874480 2930480 ) Via3_HV ;
     - io_oeb[25] ( PIN io_oeb[25] ) ( solo_squash_caravel_gf180 io_oeb[25] ) + USE SIGNAL
       + ROUTED Metal3 ( 3920 5166000 0 ) ( 42000 * )
-      NEW Metal4 ( 42000 2883440 ) ( * 5166000 )
-      NEW Metal3 ( 42000 2883440 ) ( 2441040 * 0 )
-      NEW Metal3 ( 42000 2883440 ) Via3_HV
-      NEW Metal3 ( 42000 5166000 ) Via3_HV ;
+      NEW Metal3 ( 2857680 2594480 0 ) ( 2863280 * )
+      NEW Metal4 ( 42000 3050320 ) ( * 5166000 )
+      NEW Metal4 ( 2863280 2594480 ) ( * 3050320 )
+      NEW Metal3 ( 42000 3050320 ) ( 2863280 * )
+      NEW Metal3 ( 42000 3050320 ) Via3_HV
+      NEW Metal3 ( 42000 5166000 ) Via3_HV
+      NEW Metal3 ( 2863280 2594480 ) Via3_HV
+      NEW Metal3 ( 2863280 3050320 ) Via3_HV ;
     - io_oeb[26] ( PIN io_oeb[26] ) ( solo_squash_caravel_gf180 io_oeb[26] ) + USE SIGNAL
-      + ROUTED Metal3 ( 3920 4742640 0 ) ( 43120 * )
-      NEW Metal4 ( 43120 2567600 ) ( * 4742640 )
-      NEW Metal3 ( 43120 2567600 ) ( 2441040 * 0 )
-      NEW Metal3 ( 43120 4742640 ) Via3_HV
-      NEW Metal3 ( 43120 2567600 ) Via3_HV ;
+      + ROUTED Metal3 ( 3920 4742640 0 ) ( 42000 * )
+      NEW Metal2 ( 42000 2998800 ) ( * 4742640 )
+      NEW Metal2 ( 2521680 2974160 0 ) ( * 2998800 )
+      NEW Metal3 ( 42000 2998800 ) ( 2521680 * )
+      NEW Metal2 ( 42000 4742640 ) Via2_VH
+      NEW Metal2 ( 42000 2998800 ) Via2_VH
+      NEW Metal2 ( 2521680 2998800 ) Via2_VH ;
     - io_oeb[27] ( PIN io_oeb[27] ) ( solo_squash_caravel_gf180 io_oeb[27] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2903600 0 ) ( 2874480 * )
-      NEW Metal4 ( 2874480 2903600 ) ( * 2999920 )
-      NEW Metal3 ( 3920 4319280 0 ) ( 2528400 * )
-      NEW Metal4 ( 2528400 2999920 ) ( * 4319280 )
-      NEW Metal3 ( 2528400 2999920 ) ( 2874480 * )
-      NEW Metal3 ( 2874480 2903600 ) Via3_HV
-      NEW Metal3 ( 2874480 2999920 ) Via3_HV
-      NEW Metal3 ( 2528400 4319280 ) Via3_HV
-      NEW Metal3 ( 2528400 2999920 ) Via3_HV ;
+      + ROUTED Metal3 ( 3920 4319280 0 ) ( 45360 * )
+      NEW Metal4 ( 45360 2890160 ) ( * 4319280 )
+      NEW Metal3 ( 45360 2890160 ) ( 2441040 * 0 )
+      NEW Metal3 ( 45360 2890160 ) Via3_HV
+      NEW Metal3 ( 45360 4319280 ) Via3_HV ;
     - io_oeb[28] ( PIN io_oeb[28] ) ( solo_squash_caravel_gf180 io_oeb[28] ) + USE SIGNAL
-      + ROUTED Metal3 ( 3920 3895920 0 ) ( 75600 * )
-      NEW Metal4 ( 75600 2998800 ) ( * 3895920 )
-      NEW Metal3 ( 2857680 2581040 0 ) ( 2877840 * )
-      NEW Metal4 ( 2877840 2581040 ) ( * 2998800 )
-      NEW Metal3 ( 75600 2998800 ) ( 2877840 * )
-      NEW Metal3 ( 75600 2998800 ) Via3_HV
-      NEW Metal3 ( 75600 3895920 ) Via3_HV
-      NEW Metal3 ( 2877840 2581040 ) Via3_HV
-      NEW Metal3 ( 2877840 2998800 ) Via3_HV ;
+      + ROUTED Metal3 ( 3920 3895920 0 ) ( 44240 * )
+      NEW Metal4 ( 44240 2574320 ) ( * 3895920 )
+      NEW Metal3 ( 44240 2574320 ) ( 2441040 * 0 )
+      NEW Metal3 ( 44240 2574320 ) Via3_HV
+      NEW Metal3 ( 44240 3895920 ) Via3_HV ;
     - io_oeb[29] ( PIN io_oeb[29] ) ( solo_squash_caravel_gf180 io_oeb[29] ) + USE SIGNAL
-      + ROUTED Metal3 ( 3920 3472560 0 ) ( 44240 * )
-      NEW Metal4 ( 44240 2923760 ) ( * 3472560 )
-      NEW Metal3 ( 44240 2923760 ) ( 2441040 * 0 )
-      NEW Metal3 ( 44240 2923760 ) Via3_HV
-      NEW Metal3 ( 44240 3472560 ) Via3_HV ;
+      + ROUTED Metal3 ( 3920 3472560 0 ) ( 75600 * )
+      NEW Metal4 ( 75600 3082800 ) ( * 3472560 )
+      NEW Metal3 ( 2857680 2917040 0 ) ( 2873360 * )
+      NEW Metal4 ( 2873360 2917040 ) ( * 3082800 )
+      NEW Metal3 ( 75600 3082800 ) ( 2873360 * )
+      NEW Metal3 ( 75600 3082800 ) Via3_HV
+      NEW Metal3 ( 2873360 3082800 ) Via3_HV
+      NEW Metal3 ( 75600 3472560 ) Via3_HV
+      NEW Metal3 ( 2873360 2917040 ) Via3_HV ;
     - io_oeb[2] ( PIN io_oeb[2] ) ( solo_squash_caravel_gf180 io_oeb[2] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2930480 0 ) ( 2883440 * )
-      NEW Metal4 ( 2883440 1128400 ) ( * 2930480 )
-      NEW Metal3 ( 2883440 1128400 ) ( 5956720 * 0 )
-      NEW Metal3 ( 2883440 2930480 ) Via3_HV
-      NEW Metal3 ( 2883440 1128400 ) Via3_HV ;
+      + ROUTED Metal3 ( 2857680 2943920 0 ) ( 2882320 * )
+      NEW Metal4 ( 2882320 1128400 ) ( * 2943920 )
+      NEW Metal3 ( 2882320 1128400 ) ( 5956720 * 0 )
+      NEW Metal3 ( 2882320 1128400 ) Via3_HV
+      NEW Metal3 ( 2882320 2943920 ) Via3_HV ;
     - io_oeb[30] ( PIN io_oeb[30] ) ( solo_squash_caravel_gf180 io_oeb[30] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2896880 0 ) ( 2878960 * )
-      NEW Metal4 ( 2850960 2956240 ) ( * 3049200 )
-      NEW Metal3 ( 2850960 2956240 ) ( 2878960 * )
-      NEW Metal4 ( 2878960 2896880 ) ( * 2956240 )
-      NEW Metal3 ( 3920 3049200 0 ) ( 2850960 * )
-      NEW Metal3 ( 2878960 2896880 ) Via3_HV
-      NEW Metal3 ( 2850960 3049200 ) Via3_HV
-      NEW Metal3 ( 2850960 2956240 ) Via3_HV
-      NEW Metal3 ( 2878960 2956240 ) Via3_HV ;
+      + ROUTED Metal3 ( 2857680 2574320 0 ) ( 2877840 * )
+      NEW Metal3 ( 2849840 2965200 ) ( 2877840 * )
+      NEW Metal4 ( 2849840 2965200 ) ( * 3049200 )
+      NEW Metal4 ( 2877840 2574320 ) ( * 2965200 )
+      NEW Metal3 ( 3920 3049200 0 ) ( 2849840 * )
+      NEW Metal3 ( 2877840 2574320 ) Via3_HV
+      NEW Metal3 ( 2849840 3049200 ) Via3_HV
+      NEW Metal3 ( 2849840 2965200 ) Via3_HV
+      NEW Metal3 ( 2877840 2965200 ) Via3_HV ;
     - io_oeb[31] ( PIN io_oeb[31] ) ( solo_squash_caravel_gf180 io_oeb[31] ) + USE SIGNAL
-      + ROUTED Metal3 ( 3920 2628080 0 ) ( 75600 * )
-      NEW Metal4 ( 2873360 2897100 ) ( * 2937200 )
-      NEW Metal3 ( 2857680 2937200 0 ) ( 2873360 * )
-      NEW Metal4 ( 75600 2628080 ) ( * 2897100 )
-      NEW Metal5 ( 75600 2897100 ) ( 2873360 * )
-      NEW Metal3 ( 75600 2628080 ) Via3_HV
-      NEW Metal4 ( 75600 2897100 ) Via4_VH
-      NEW Metal4 ( 2873360 2897100 ) Via4_VH
-      NEW Metal3 ( 2873360 2937200 ) Via3_HV ;
+      + ROUTED Metal4 ( 2410800 2625840 ) ( * 2930480 )
+      NEW Metal3 ( 3920 2625840 0 ) ( 2410800 * )
+      NEW Metal3 ( 2410800 2930480 ) ( 2441040 * 0 )
+      NEW Metal3 ( 2410800 2625840 ) Via3_HV
+      NEW Metal3 ( 2410800 2930480 ) Via3_HV ;
     - io_oeb[32] ( PIN io_oeb[32] ) ( solo_squash_caravel_gf180 io_oeb[32] ) + USE SIGNAL
-      + ROUTED Metal3 ( 3920 2204720 0 ) ( 44240 * )
-      NEW Metal4 ( 44240 2204720 ) ( * 2890160 )
-      NEW Metal3 ( 44240 2890160 ) ( 2441040 * 0 )
-      NEW Metal3 ( 44240 2204720 ) Via3_HV
-      NEW Metal3 ( 44240 2890160 ) Via3_HV ;
+      + ROUTED Metal3 ( 2857680 2903600 0 ) ( 2876720 * )
+      NEW Metal4 ( 2876720 2202480 ) ( * 2903600 )
+      NEW Metal3 ( 3920 2202480 0 ) ( 2876720 * )
+      NEW Metal3 ( 2876720 2903600 ) Via3_HV
+      NEW Metal3 ( 2876720 2202480 ) Via3_HV ;
     - io_oeb[33] ( PIN io_oeb[33] ) ( solo_squash_caravel_gf180 io_oeb[33] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2910320 0 ) ( 2876720 * )
-      NEW Metal4 ( 2876720 1779120 ) ( * 2910320 )
-      NEW Metal3 ( 3920 1779120 0 ) ( 2876720 * )
-      NEW Metal3 ( 2876720 2910320 ) Via3_HV
-      NEW Metal3 ( 2876720 1779120 ) Via3_HV ;
+      + ROUTED Metal3 ( 2857680 2937200 0 ) ( 2875600 * )
+      NEW Metal4 ( 2875600 1779120 ) ( * 2937200 )
+      NEW Metal3 ( 3920 1779120 0 ) ( 2875600 * )
+      NEW Metal3 ( 2875600 1779120 ) Via3_HV
+      NEW Metal3 ( 2875600 2937200 ) Via3_HV ;
     - io_oeb[34] ( PIN io_oeb[34] ) ( solo_squash_caravel_gf180 io_oeb[34] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2950640 0 ) ( 2875600 * )
-      NEW Metal4 ( 2875600 1355760 ) ( * 2950640 )
-      NEW Metal3 ( 3920 1355760 0 ) ( 2875600 * )
-      NEW Metal3 ( 2875600 1355760 ) Via3_HV
-      NEW Metal3 ( 2875600 2950640 ) Via3_HV ;
+      + ROUTED Metal3 ( 3920 1358000 0 ) ( 43120 * )
+      NEW Metal4 ( 43120 1358000 ) ( * 2896880 )
+      NEW Metal3 ( 43120 2896880 ) ( 2441040 * 0 )
+      NEW Metal3 ( 43120 2896880 ) Via3_HV
+      NEW Metal3 ( 43120 1358000 ) Via3_HV ;
     - io_oeb[35] ( PIN io_oeb[35] ) ( solo_squash_caravel_gf180 io_oeb[35] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2410800 2560880 ) ( 2441040 * 0 )
-      NEW Metal4 ( 2410800 932400 ) ( * 2560880 )
-      NEW Metal3 ( 3920 932400 0 ) ( 2410800 * )
-      NEW Metal3 ( 2410800 932400 ) Via3_HV
-      NEW Metal3 ( 2410800 2560880 ) Via3_HV ;
+      + ROUTED Metal3 ( 2857680 2910320 0 ) ( 2874480 * )
+      NEW Metal4 ( 2874480 932400 ) ( * 2910320 )
+      NEW Metal3 ( 3920 932400 0 ) ( 2874480 * )
+      NEW Metal3 ( 2874480 932400 ) Via3_HV
+      NEW Metal3 ( 2874480 2910320 ) Via3_HV ;
     - io_oeb[36] ( PIN io_oeb[36] ) ( solo_squash_caravel_gf180 io_oeb[36] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2587760 0 ) ( 2874480 * )
-      NEW Metal4 ( 2874480 509040 ) ( * 2587760 )
-      NEW Metal3 ( 3920 509040 0 ) ( 2874480 * )
-      NEW Metal3 ( 2874480 509040 ) Via3_HV
-      NEW Metal3 ( 2874480 2587760 ) Via3_HV
-      NEW Metal4 ( 2874480 2587760 ) RECT ( -280 0 280 480 )  ;
+      + ROUTED Metal3 ( 2857680 2896880 0 ) ( 2873360 * )
+      NEW Metal4 ( 2873360 509040 ) ( * 2896880 )
+      NEW Metal3 ( 3920 509040 0 ) ( 2873360 * )
+      NEW Metal3 ( 2873360 509040 ) Via3_HV
+      NEW Metal3 ( 2873360 2896880 ) Via3_HV ;
     - io_oeb[37] ( PIN io_oeb[37] ) ( solo_squash_caravel_gf180 io_oeb[37] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2554160 0 ) ( 2873360 * )
-      NEW Metal4 ( 2873360 85680 ) ( * 2554160 )
-      NEW Metal3 ( 3920 85680 0 ) ( 2873360 * )
-      NEW Metal3 ( 2873360 85680 ) Via3_HV
-      NEW Metal3 ( 2873360 2554160 ) Via3_HV ;
+      + ROUTED Metal3 ( 3920 87920 0 ) ( 42000 * )
+      NEW Metal4 ( 42000 87920 ) ( * 2581040 )
+      NEW Metal3 ( 42000 2581040 ) ( 2441040 * 0 )
+      NEW Metal3 ( 42000 2581040 ) Via3_HV
+      NEW Metal3 ( 42000 87920 ) Via3_HV ;
     - io_oeb[3] ( PIN io_oeb[3] ) ( solo_squash_caravel_gf180 io_oeb[3] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2805040 1524880 ) ( 5956720 * 0 )
-      NEW Metal2 ( 2797200 2971920 0 ) ( 2805040 * )
-      NEW Metal4 ( 2805040 1524880 ) ( * 2971920 )
+      + ROUTED Metal4 ( 2805040 1524880 ) ( * 2906400 )
+      NEW Metal4 ( 2801680 2906400 ) ( 2805040 * )
+      NEW Metal4 ( 2801680 2906400 ) ( * 2968560 )
+      NEW Metal2 ( 2797200 2968560 0 ) ( 2801680 * )
+      NEW Metal3 ( 2805040 1524880 ) ( 5956720 * 0 )
       NEW Metal3 ( 2805040 1524880 ) Via3_HV
-      NEW Metal2 ( 2805040 2971920 ) Via2_VH
-      NEW Metal3 ( 2805040 2971920 ) Via3_HV
-      NEW Metal3 ( 2805040 2971920 ) RECT ( -660 -280 0 280 )  ;
+      NEW Metal2 ( 2801680 2968560 ) Via2_VH
+      NEW Metal3 ( 2801680 2968560 ) Via3_HV
+      NEW Metal3 ( 2801680 2968560 ) RECT ( -660 -280 0 280 )  ;
     - io_oeb[4] ( PIN io_oeb[4] ) ( solo_squash_caravel_gf180 io_oeb[4] ) + USE SIGNAL
       + ROUTED Metal3 ( 2548560 1921360 ) ( 5956720 * 0 )
       NEW Metal2 ( 2548560 1921360 ) ( * 2520560 0 )
       NEW Metal2 ( 2548560 1921360 ) Via2_VH ;
     - io_oeb[5] ( PIN io_oeb[5] ) ( solo_squash_caravel_gf180 io_oeb[5] ) + USE SIGNAL
-      + ROUTED Metal3 ( 2417520 2574320 ) ( 2441040 * 0 )
-      NEW Metal4 ( 2417520 2318960 ) ( * 2574320 )
+      + ROUTED Metal4 ( 2417520 2318960 ) ( * 2567600 )
+      NEW Metal3 ( 2417520 2567600 ) ( 2441040 * 0 )
       NEW Metal3 ( 2417520 2318960 ) ( 5956720 * 0 )
       NEW Metal3 ( 2417520 2318960 ) Via3_HV
-      NEW Metal3 ( 2417520 2574320 ) Via3_HV ;
+      NEW Metal3 ( 2417520 2567600 ) Via3_HV ;
     - io_oeb[6] ( PIN io_oeb[6] ) ( solo_squash_caravel_gf180 io_oeb[6] ) + USE SIGNAL
-      + ROUTED Metal3 ( 5913040 2714320 ) ( 5956720 * 0 )
-      NEW Metal4 ( 5913040 2567600 ) ( * 2714320 )
-      NEW Metal3 ( 2857680 2567600 0 ) ( 5913040 * )
-      NEW Metal3 ( 5913040 2567600 ) Via3_HV
-      NEW Metal3 ( 5913040 2714320 ) Via3_HV ;
+      + ROUTED Metal3 ( 5906320 2714320 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5906320 2567600 ) ( * 2714320 )
+      NEW Metal3 ( 2857680 2567600 0 ) ( 5906320 * )
+      NEW Metal3 ( 5906320 2567600 ) Via3_HV
+      NEW Metal3 ( 5906320 2714320 ) Via3_HV ;
     - io_oeb[7] ( PIN io_oeb[7] ) ( solo_squash_caravel_gf180 io_oeb[7] ) + USE SIGNAL
-      + ROUTED Metal3 ( 5910800 3110800 ) ( 5956720 * 0 )
-      NEW Metal4 ( 5910800 2560880 ) ( * 3110800 )
-      NEW Metal3 ( 2857680 2560880 0 ) ( 5910800 * )
-      NEW Metal3 ( 5910800 3110800 ) Via3_HV
-      NEW Metal3 ( 5910800 2560880 ) Via3_HV ;
+      + ROUTED Metal3 ( 5911920 3110800 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5911920 2581040 ) ( * 3110800 )
+      NEW Metal3 ( 2857680 2581040 0 ) ( 5911920 * )
+      NEW Metal3 ( 5911920 2581040 ) Via3_HV
+      NEW Metal3 ( 5911920 3110800 ) Via3_HV ;
     - io_oeb[8] ( PIN io_oeb[8] ) ( solo_squash_caravel_gf180 io_oeb[8] ) + USE SIGNAL
-      + ROUTED Metal2 ( 4342800 2501520 ) ( * 3507280 )
+      + ROUTED Metal3 ( 4342800 3507280 ) ( 5956720 * 0 )
       NEW Metal2 ( 2541840 2501520 ) ( * 2520560 0 )
       NEW Metal3 ( 2541840 2501520 ) ( 4342800 * )
-      NEW Metal3 ( 4342800 3507280 ) ( 5956720 * 0 )
-      NEW Metal2 ( 4342800 2501520 ) Via2_VH
+      NEW Metal2 ( 4342800 2501520 ) ( * 3507280 )
       NEW Metal2 ( 4342800 3507280 ) Via2_VH
-      NEW Metal2 ( 2541840 2501520 ) Via2_VH ;
+      NEW Metal2 ( 2541840 2501520 ) Via2_VH
+      NEW Metal2 ( 4342800 2501520 ) Via2_VH ;
     - io_oeb[9] ( PIN io_oeb[9] ) ( solo_squash_caravel_gf180 io_oeb[9] ) + USE SIGNAL
-      + ROUTED Metal3 ( 5909680 3903760 ) ( 5956720 * 0 )
-      NEW Metal4 ( 5909680 2540720 ) ( * 3903760 )
-      NEW Metal3 ( 2857680 2540720 0 ) ( 5909680 * )
-      NEW Metal3 ( 5909680 2540720 ) Via3_HV
-      NEW Metal3 ( 5909680 3903760 ) Via3_HV ;
+      + ROUTED Metal3 ( 5910800 3903760 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5910800 2587760 ) ( * 3903760 )
+      NEW Metal3 ( 2857680 2587760 0 ) ( 5910800 * )
+      NEW Metal3 ( 5910800 2587760 ) Via3_HV
+      NEW Metal3 ( 5910800 3903760 ) Via3_HV ;
     - io_out[0] ( PIN io_out[0] ) + USE SIGNAL ;
     - io_out[10] ( PIN io_out[10] ) + USE SIGNAL ;
     - io_out[11] ( PIN io_out[11] ) + USE SIGNAL ;
     - io_out[12] ( PIN io_out[12] ) + USE SIGNAL ;
     - io_out[13] ( PIN io_out[13] ) ( solo_squash_caravel_gf180 red ) + USE SIGNAL
-      + ROUTED Metal3 ( 5907440 5357520 ) ( 5956720 * 0 )
-      NEW Metal4 ( 5907440 2715440 ) ( * 5357520 )
-      NEW Metal3 ( 2857680 2715440 0 ) ( 5907440 * )
-      NEW Metal3 ( 5907440 2715440 ) Via3_HV
-      NEW Metal3 ( 5907440 5357520 ) Via3_HV ;
+      + ROUTED Metal3 ( 5908560 5357520 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5908560 2715440 ) ( * 5357520 )
+      NEW Metal3 ( 2857680 2715440 0 ) ( 5908560 * )
+      NEW Metal3 ( 5908560 2715440 ) Via3_HV
+      NEW Metal3 ( 5908560 5357520 ) Via3_HV ;
     - io_out[14] ( PIN io_out[14] ) ( solo_squash_caravel_gf180 green ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2728880 0 ) ( 2881200 * )
-      NEW Metal4 ( 2881200 2728880 ) ( * 5754000 )
-      NEW Metal3 ( 2881200 5754000 ) ( 5956720 * 0 )
-      NEW Metal3 ( 2881200 5754000 ) Via3_HV
-      NEW Metal3 ( 2881200 2728880 ) Via3_HV ;
+      + ROUTED Metal3 ( 5906320 5754000 ) ( 5956720 * 0 )
+      NEW Metal4 ( 5906320 2728880 ) ( * 5754000 )
+      NEW Metal3 ( 2857680 2728880 0 ) ( 5906320 * )
+      NEW Metal3 ( 5906320 2728880 ) Via3_HV
+      NEW Metal3 ( 5906320 5754000 ) Via3_HV ;
     - io_out[15] ( PIN io_out[15] ) ( solo_squash_caravel_gf180 blue ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2668400 0 ) ( 5626320 * )
-      NEW Metal2 ( 5626320 2668400 ) ( * 5956720 0 )
+      + ROUTED Metal2 ( 5626320 2668400 ) ( * 5956720 0 )
+      NEW Metal3 ( 2857680 2668400 0 ) ( 5626320 * )
       NEW Metal2 ( 5626320 2668400 ) Via2_VH ;
     - io_out[16] ( PIN io_out[16] ) ( solo_squash_caravel_gf180 hsync ) + USE SIGNAL
-      + ROUTED Metal2 ( 4964400 5905200 ) ( * 5956720 0 )
-      NEW Metal3 ( 2965200 5905200 ) ( 4964400 * )
-      NEW Metal3 ( 2857680 2722160 0 ) ( 2965200 * )
-      NEW Metal2 ( 2965200 2722160 ) ( * 5905200 )
-      NEW Metal2 ( 4964400 5905200 ) Via2_VH
-      NEW Metal2 ( 2965200 5905200 ) Via2_VH
-      NEW Metal2 ( 2965200 2722160 ) Via2_VH ;
+      + ROUTED Metal2 ( 4964400 2722160 ) ( * 5956720 0 )
+      NEW Metal3 ( 2857680 2722160 0 ) ( 4964400 * )
+      NEW Metal2 ( 4964400 2722160 ) Via2_VH ;
     - io_out[17] ( PIN io_out[17] ) ( solo_squash_caravel_gf180 vsync ) + USE SIGNAL
-      + ROUTED Metal2 ( 4302480 5906320 ) ( * 5956720 0 )
+      + ROUTED Metal2 ( 4302480 5905200 ) ( * 5956720 0 )
       NEW Metal2 ( 2635920 2500400 ) ( * 2520560 0 )
-      NEW Metal3 ( 2998800 5906320 ) ( 4302480 * )
+      NEW Metal3 ( 2998800 5905200 ) ( 4302480 * )
       NEW Metal3 ( 2635920 2500400 ) ( 2998800 * )
-      NEW Metal2 ( 2998800 2500400 ) ( * 5906320 )
-      NEW Metal2 ( 4302480 5906320 ) Via2_VH
+      NEW Metal2 ( 2998800 2500400 ) ( * 5905200 )
+      NEW Metal2 ( 4302480 5905200 ) Via2_VH
       NEW Metal2 ( 2635920 2500400 ) Via2_VH
-      NEW Metal2 ( 2998800 5906320 ) Via2_VH
+      NEW Metal2 ( 2998800 5905200 ) Via2_VH
       NEW Metal2 ( 2998800 2500400 ) Via2_VH ;
     - io_out[18] ( PIN io_out[18] ) ( solo_squash_caravel_gf180 speaker ) + USE SIGNAL
-      + ROUTED Metal2 ( 3640560 5907440 ) ( * 5956720 0 )
-      NEW Metal3 ( 2418640 2762480 ) ( 2441040 * 0 )
-      NEW Metal2 ( 2418640 2762480 ) ( * 5907440 )
-      NEW Metal3 ( 2418640 5907440 ) ( 3640560 * )
-      NEW Metal2 ( 2418640 5907440 ) Via2_VH
-      NEW Metal2 ( 3640560 5907440 ) Via2_VH
-      NEW Metal2 ( 2418640 2762480 ) Via2_VH ;
+      + ROUTED Metal2 ( 2435440 2762480 ) ( * 5907440 )
+      NEW Metal2 ( 3640560 5907440 ) ( * 5956720 0 )
+      NEW Metal3 ( 2435440 5907440 ) ( 3640560 * )
+      NEW Metal3 ( 2435440 2762480 ) ( 2441040 * 0 )
+      NEW Metal2 ( 2435440 5907440 ) Via2_VH
+      NEW Metal2 ( 2435440 2762480 ) Via2_VH
+      NEW Metal2 ( 3640560 5907440 ) Via2_VH ;
     - io_out[19] ( PIN io_out[19] ) ( solo_squash_caravel_gf180 debug_design_reset ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2648240 0 ) ( 2978640 * )
-      NEW Metal2 ( 2978640 2648240 ) ( * 5956720 0 )
-      NEW Metal2 ( 2978640 2648240 ) Via2_VH ;
+      + ROUTED Metal3 ( 2857680 2654960 0 ) ( 2978640 * )
+      NEW Metal2 ( 2978640 2654960 ) ( * 5956720 0 )
+      NEW Metal2 ( 2978640 2654960 ) Via2_VH ;
     - io_out[1] ( PIN io_out[1] ) + USE SIGNAL ;
     - io_out[20] ( PIN io_out[20] ) ( solo_squash_caravel_gf180 debug_gpio_ready ) + USE SIGNAL
-      + ROUTED Metal3 ( 2857680 2594480 0 ) ( 2874480 * )
-      NEW Metal3 ( 2847600 2973040 ) ( 2874480 * )
-      NEW Metal2 ( 2874480 2594480 ) ( * 2973040 )
-      NEW Metal2 ( 2847600 2973040 ) ( * 5906320 )
-      NEW Metal2 ( 2317840 5906320 ) ( * 5956720 0 )
-      NEW Metal3 ( 2317840 5906320 ) ( 2847600 * )
-      NEW Metal2 ( 2874480 2594480 ) Via2_VH
-      NEW Metal2 ( 2847600 5906320 ) Via2_VH
-      NEW Metal2 ( 2847600 2973040 ) Via2_VH
-      NEW Metal2 ( 2874480 2973040 ) Via2_VH
-      NEW Metal2 ( 2317840 5906320 ) Via2_VH ;
+      + ROUTED Metal3 ( 2853200 2538480 ) ( * 2540720 0 )
+      NEW Metal2 ( 2316720 2539600 ) ( * 5956720 0 )
+      NEW Metal3 ( 2316720 2539600 ) ( 2671200 * )
+      NEW Metal3 ( 2671200 2538480 ) ( * 2539600 )
+      NEW Metal3 ( 2671200 2538480 ) ( 2853200 * )
+      NEW Metal2 ( 2316720 2539600 ) Via2_VH ;
     - io_out[21] ( PIN io_out[21] ) + USE SIGNAL ;
     - io_out[22] ( PIN io_out[22] ) + USE SIGNAL ;
     - io_out[23] ( PIN io_out[23] ) + USE SIGNAL ;
@@ -4650,13 +4645,13 @@ NETS 416 ;
     - io_out[8] ( PIN io_out[8] ) + USE SIGNAL ;
     - io_out[9] ( PIN io_out[9] ) + USE SIGNAL ;
     - la_data_in[0] ( PIN la_data_in[0] ) ( solo_squash_caravel_gf180 gpio_ready ) + USE SIGNAL
-      + ROUTED Metal2 ( 2133040 3920 0 ) ( * 44240 )
-      NEW Metal3 ( 2857680 2574320 0 ) ( 2874480 * )
-      NEW Metal2 ( 2874480 44240 ) ( * 2574320 )
-      NEW Metal3 ( 2133040 44240 ) ( 2874480 * )
-      NEW Metal2 ( 2133040 44240 ) Via2_VH
-      NEW Metal2 ( 2874480 44240 ) Via2_VH
-      NEW Metal2 ( 2874480 2574320 ) Via2_VH ;
+      + ROUTED Metal2 ( 2133040 3920 0 ) ( * 43120 )
+      NEW Metal3 ( 2857680 2547440 0 ) ( 2874480 * )
+      NEW Metal2 ( 2874480 43120 ) ( * 2547440 )
+      NEW Metal3 ( 2133040 43120 ) ( 2874480 * )
+      NEW Metal2 ( 2133040 43120 ) Via2_VH
+      NEW Metal2 ( 2874480 43120 ) Via2_VH
+      NEW Metal2 ( 2874480 2547440 ) Via2_VH ;
     - la_data_in[10] ( PIN la_data_in[10] ) + USE SIGNAL ;
     - la_data_in[11] ( PIN la_data_in[11] ) + USE SIGNAL ;
     - la_data_in[12] ( PIN la_data_in[12] ) + USE SIGNAL ;
@@ -4853,21 +4848,17 @@ NETS 416 ;
     - user_irq[1] ( PIN user_irq[1] ) + USE SIGNAL ;
     - user_irq[2] ( PIN user_irq[2] ) + USE SIGNAL ;
     - wb_clk_i ( PIN wb_clk_i ) ( solo_squash_caravel_gf180 wb_clk_i ) + USE CLOCK
-      + ROUTED Metal2 ( 115920 3920 0 ) ( * 42000 )
-      NEW Metal3 ( 2410800 2917040 ) ( 2441040 * 0 )
-      NEW Metal2 ( 2410800 42000 ) ( * 2917040 )
-      NEW Metal3 ( 115920 42000 ) ( 2410800 * )
-      NEW Metal2 ( 115920 42000 ) Via2_VH
-      NEW Metal2 ( 2410800 42000 ) Via2_VH
-      NEW Metal2 ( 2410800 2917040 ) Via2_VH ;
+      + ROUTED Metal2 ( 113680 3920 0 ) ( * 2923760 )
+      NEW Metal3 ( 113680 2923760 ) ( 2441040 * 0 )
+      NEW Metal2 ( 113680 2923760 ) Via2_VH ;
     - wb_rst_i ( PIN wb_rst_i ) ( solo_squash_caravel_gf180 wb_rst_i ) + USE SIGNAL
       + ROUTED Metal3 ( 2857680 2789360 0 ) ( 2873360 * )
-      NEW Metal2 ( 2873360 43120 ) ( * 2789360 )
-      NEW Metal2 ( 133840 3920 0 ) ( * 43120 )
-      NEW Metal3 ( 133840 43120 ) ( 2873360 * )
-      NEW Metal2 ( 2873360 43120 ) Via2_VH
+      NEW Metal2 ( 2873360 42000 ) ( * 2789360 )
+      NEW Metal2 ( 133840 3920 0 ) ( * 42000 )
+      NEW Metal3 ( 133840 42000 ) ( 2873360 * )
+      NEW Metal2 ( 2873360 42000 ) Via2_VH
       NEW Metal2 ( 2873360 2789360 ) Via2_VH
-      NEW Metal2 ( 133840 43120 ) Via2_VH ;
+      NEW Metal2 ( 133840 42000 ) Via2_VH ;
     - wbs_ack_o ( PIN wbs_ack_o ) + USE SIGNAL ;
     - wbs_adr_i[0] ( PIN wbs_adr_i[0] ) + USE SIGNAL ;
     - wbs_adr_i[10] ( PIN wbs_adr_i[10] ) + USE SIGNAL ;

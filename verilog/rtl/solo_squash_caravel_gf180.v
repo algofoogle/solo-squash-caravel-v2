@@ -69,9 +69,9 @@ module solo_squash_caravel_gf180 (
     assign io_oeb[18:13] = {6{design_reset}};
     // IO[20:19] are always outputting, because they're test pins:
     assign io_oeb[20:19] = 2'b00;
-    // The rest are inputs:
-    assign io_oeb[37:21] = 17'd0;
-    assign io_oeb[12:0] = 13'd0;
+    // The rest are inputs (so make them high):
+    assign io_oeb[37:21] = ~17'd0;
+    assign io_oeb[12:0] = ~13'd0;
 
     // For testing purposes, we expose our internal "design_reset" and
     // our internal LA-based "gpio_ready" signal as GPIO outputs 19 and 20 respectively.

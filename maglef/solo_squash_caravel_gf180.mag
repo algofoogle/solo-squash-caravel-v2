@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1701082018
+timestamp 1701087060
 << obsm1 >>
 rect 1344 3076 40544 42396
 << metal2 >>
@@ -24,20 +24,20 @@ rect 19660 800 20100 860
 rect 20332 800 32868 860
 rect 33100 800 40404 860
 << metal3 >>
+rect 41101 43680 41901 43792
 rect 41101 43008 41901 43120
 rect 41101 42336 41901 42448
 rect 41101 41664 41901 41776
+rect 0 40992 800 41104
 rect 41101 40992 41901 41104
 rect 0 40320 800 40432
 rect 41101 40320 41901 40432
-rect 0 39648 800 39760
 rect 41101 39648 41901 39760
 rect 41101 38976 41901 39088
 rect 41101 38304 41901 38416
+rect 0 37632 800 37744
 rect 41101 37632 41901 37744
 rect 0 36960 800 37072
-rect 41101 36960 41901 37072
-rect 0 36288 800 36400
 rect 41101 26880 41901 26992
 rect 41101 26208 41901 26320
 rect 0 24864 800 24976
@@ -54,8 +54,8 @@ rect 41101 16800 41901 16912
 rect 41101 16128 41901 16240
 rect 41101 15456 41901 15568
 rect 41101 14784 41901 14896
+rect 41101 13440 41901 13552
 rect 41101 12768 41901 12880
-rect 41101 12096 41901 12208
 rect 41101 8064 41901 8176
 rect 41101 7392 41901 7504
 rect 41101 6720 41901 6832
@@ -72,28 +72,28 @@ rect 41101 3360 41901 3472
 rect 41101 2688 41901 2800
 rect 41101 2016 41901 2128
 << obsm3 >>
-rect 800 42948 41041 43092
+rect 800 43620 41041 43764
+rect 800 43180 41101 43620
+rect 800 42948 41041 43180
 rect 800 42508 41101 42948
 rect 800 42276 41041 42508
 rect 800 41836 41101 42276
 rect 800 41604 41041 41836
 rect 800 41164 41101 41604
-rect 800 40932 41041 41164
+rect 860 40932 41041 41164
 rect 800 40492 41101 40932
 rect 860 40260 41041 40492
 rect 800 39820 41101 40260
-rect 860 39588 41041 39820
+rect 800 39588 41041 39820
 rect 800 39148 41101 39588
 rect 800 38916 41041 39148
 rect 800 38476 41101 38916
 rect 800 38244 41041 38476
 rect 800 37804 41101 38244
-rect 800 37572 41041 37804
+rect 860 37572 41041 37804
 rect 800 37132 41101 37572
-rect 860 36900 41041 37132
-rect 800 36460 41101 36900
-rect 860 36228 41101 36460
-rect 800 27052 41101 36228
+rect 860 36900 41101 37132
+rect 800 27052 41101 36900
 rect 800 26820 41041 27052
 rect 800 26380 41101 26820
 rect 800 26148 41041 26380
@@ -121,11 +121,11 @@ rect 800 15628 41101 16068
 rect 800 15396 41041 15628
 rect 800 14956 41101 15396
 rect 800 14724 41041 14956
-rect 800 12940 41101 14724
+rect 800 13612 41101 14724
+rect 800 13380 41041 13612
+rect 800 12940 41101 13380
 rect 800 12708 41041 12940
-rect 800 12268 41101 12708
-rect 800 12036 41041 12268
-rect 800 8236 41101 12036
+rect 800 8236 41101 12708
 rect 800 8004 41041 8236
 rect 800 7564 41101 8004
 rect 800 7332 41041 7564
@@ -150,30 +150,31 @@ rect 4448 3076 4768 42396
 rect 19808 3076 20128 42396
 rect 35168 3076 35488 42396
 << obsm4 >>
-rect 4844 3490 19748 35374
+rect 4284 3490 4388 35374
+rect 4828 3490 19748 35374
 rect 20188 3490 34580 35374
 << labels >>
 rlabel metal3 s 41101 14784 41901 14896 6 blue
 port 1 nsew signal output
-rlabel metal3 s 41101 12768 41901 12880 6 debug_design_reset
+rlabel metal3 s 41101 13440 41901 13552 6 debug_design_reset
 port 2 nsew signal output
-rlabel metal3 s 41101 7392 41901 7504 6 debug_gpio_ready
+rlabel metal3 s 41101 2016 41901 2128 6 debug_gpio_ready
 port 3 nsew signal output
 rlabel metal3 s 0 20160 800 20272 6 down_key_n
 port 4 nsew signal input
 rlabel metal3 s 41101 26208 41901 26320 6 ext_reset_n
 port 5 nsew signal input
-rlabel metal3 s 41101 5376 41901 5488 6 gpio_ready
+rlabel metal3 s 41101 2688 41901 2800 6 gpio_ready
 port 6 nsew signal input
 rlabel metal3 s 41101 20832 41901 20944 6 green
 port 7 nsew signal output
 rlabel metal3 s 41101 20160 41901 20272 6 hsync
 port 8 nsew signal output
-rlabel metal3 s 41101 36960 41901 37072 6 io_oeb[0]
+rlabel metal3 s 41101 43680 41901 43792 6 io_oeb[0]
 port 9 nsew signal output
-rlabel metal3 s 0 6048 800 6160 6 io_oeb[10]
+rlabel metal3 s 0 3360 800 3472 6 io_oeb[10]
 port 10 nsew signal output
-rlabel metal3 s 0 3360 800 3472 6 io_oeb[11]
+rlabel metal3 s 0 4032 800 4144 6 io_oeb[11]
 port 11 nsew signal output
 rlabel metal3 s 41101 40320 41901 40432 6 io_oeb[12]
 port 12 nsew signal output
@@ -189,61 +190,61 @@ rlabel metal3 s 41101 18816 41901 18928 6 io_oeb[17]
 port 17 nsew signal output
 rlabel metal3 s 41101 16128 41901 16240 6 io_oeb[18]
 port 18 nsew signal output
-rlabel metal3 s 41101 12096 41901 12208 6 io_oeb[19]
+rlabel metal3 s 41101 3360 41901 3472 6 io_oeb[19]
 port 19 nsew signal output
 rlabel metal2 s 32928 0 33040 800 6 io_oeb[1]
 port 20 nsew signal output
-rlabel metal3 s 41101 42336 41901 42448 6 io_oeb[20]
+rlabel metal3 s 41101 4032 41901 4144 6 io_oeb[20]
 port 21 nsew signal output
-rlabel metal3 s 41101 8064 41901 8176 6 io_oeb[21]
+rlabel metal3 s 41101 12768 41901 12880 6 io_oeb[21]
 port 22 nsew signal output
-rlabel metal3 s 41101 39648 41901 39760 6 io_oeb[22]
+rlabel metal3 s 41101 43008 41901 43120 6 io_oeb[22]
 port 23 nsew signal output
-rlabel metal3 s 41101 2688 41901 2800 6 io_oeb[23]
+rlabel metal3 s 41101 8064 41901 8176 6 io_oeb[23]
 port 24 nsew signal output
-rlabel metal2 s 8064 44685 8176 45485 6 io_oeb[24]
+rlabel metal3 s 41101 40992 41901 41104 6 io_oeb[24]
 port 25 nsew signal output
-rlabel metal3 s 0 36288 800 36400 6 io_oeb[25]
+rlabel metal3 s 41101 7392 41901 7504 6 io_oeb[25]
 port 26 nsew signal output
-rlabel metal3 s 0 4704 800 4816 6 io_oeb[26]
+rlabel metal2 s 8064 44685 8176 45485 6 io_oeb[26]
 port 27 nsew signal output
-rlabel metal3 s 41101 38304 41901 38416 6 io_oeb[27]
+rlabel metal3 s 0 36960 800 37072 6 io_oeb[27]
 port 28 nsew signal output
-rlabel metal3 s 41101 6048 41901 6160 6 io_oeb[28]
+rlabel metal3 s 0 5376 800 5488 6 io_oeb[28]
 port 29 nsew signal output
-rlabel metal3 s 0 40320 800 40432 6 io_oeb[29]
+rlabel metal3 s 41101 39648 41901 39760 6 io_oeb[29]
 port 30 nsew signal output
-rlabel metal3 s 41101 40992 41901 41104 6 io_oeb[2]
+rlabel metal3 s 41101 42336 41901 42448 6 io_oeb[2]
 port 31 nsew signal output
-rlabel metal3 s 41101 37632 41901 37744 6 io_oeb[30]
+rlabel metal3 s 41101 5376 41901 5488 6 io_oeb[30]
 port 32 nsew signal output
-rlabel metal3 s 41101 41664 41901 41776 6 io_oeb[31]
+rlabel metal3 s 0 40992 800 41104 6 io_oeb[31]
 port 33 nsew signal output
-rlabel metal3 s 0 36960 800 37072 6 io_oeb[32]
+rlabel metal3 s 41101 38304 41901 38416 6 io_oeb[32]
 port 34 nsew signal output
-rlabel metal3 s 41101 38976 41901 39088 6 io_oeb[33]
+rlabel metal3 s 41101 41664 41901 41776 6 io_oeb[33]
 port 35 nsew signal output
-rlabel metal3 s 41101 43008 41901 43120 6 io_oeb[34]
+rlabel metal3 s 0 37632 800 37744 6 io_oeb[34]
 port 36 nsew signal output
-rlabel metal3 s 0 4032 800 4144 6 io_oeb[35]
+rlabel metal3 s 41101 38976 41901 39088 6 io_oeb[35]
 port 37 nsew signal output
-rlabel metal3 s 41101 6720 41901 6832 6 io_oeb[36]
+rlabel metal3 s 41101 37632 41901 37744 6 io_oeb[36]
 port 38 nsew signal output
-rlabel metal3 s 41101 3360 41901 3472 6 io_oeb[37]
+rlabel metal3 s 0 6048 800 6160 6 io_oeb[37]
 port 39 nsew signal output
 rlabel metal2 s 35616 44685 35728 45485 6 io_oeb[3]
 port 40 nsew signal output
 rlabel metal2 s 10752 0 10864 800 6 io_oeb[4]
 port 41 nsew signal output
-rlabel metal3 s 0 5376 800 5488 6 io_oeb[5]
+rlabel metal3 s 0 4704 800 4816 6 io_oeb[5]
 port 42 nsew signal output
 rlabel metal3 s 41101 4704 41901 4816 6 io_oeb[6]
 port 43 nsew signal output
-rlabel metal3 s 41101 4032 41901 4144 6 io_oeb[7]
+rlabel metal3 s 41101 6048 41901 6160 6 io_oeb[7]
 port 44 nsew signal output
 rlabel metal2 s 10080 0 10192 800 6 io_oeb[8]
 port 45 nsew signal output
-rlabel metal3 s 41101 2016 41901 2128 6 io_oeb[9]
+rlabel metal3 s 41101 6720 41901 6832 6 io_oeb[9]
 port 46 nsew signal output
 rlabel metal3 s 0 24864 800 24976 6 new_game_n
 port 47 nsew signal input
@@ -263,7 +264,7 @@ rlabel metal4 s 19808 3076 20128 42396 6 vss
 port 53 nsew ground bidirectional
 rlabel metal2 s 19488 0 19600 800 6 vsync
 port 54 nsew signal output
-rlabel metal3 s 0 39648 800 39760 6 wb_clk_i
+rlabel metal3 s 0 40320 800 40432 6 wb_clk_i
 port 55 nsew signal input
 rlabel metal3 s 41101 26880 41901 26992 6 wb_rst_i
 port 56 nsew signal input
@@ -271,8 +272,8 @@ port 56 nsew signal input
 string FIXED_BBOX 0 0 41901 45485
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 1290344
-string GDS_FILE /home/zerotoasic/anton/solo-squash-caravel-v2/openlane/solo_squash_caravel_gf180/runs/23_11_27_21_16/results/signoff/solo_squash_caravel_gf180.magic.gds
-string GDS_START 236634
+string GDS_END 1292318
+string GDS_FILE /home/zerotoasic/anton/solo-squash-caravel-v2/openlane/solo_squash_caravel_gf180/runs/23_11_27_22_40/results/signoff/solo_squash_caravel_gf180.magic.gds
+string GDS_START 238782
 << end >>
 
