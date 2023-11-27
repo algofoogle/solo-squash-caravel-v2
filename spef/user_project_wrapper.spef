@@ -1,0 +1,2021 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "user_project_wrapper"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 io_in[0]
+*2 io_in[10]
+*3 io_in[11]
+*4 io_in[12]
+*5 io_in[13]
+*6 io_in[14]
+*7 io_in[15]
+*8 io_in[16]
+*9 io_in[17]
+*10 io_in[18]
+*11 io_in[19]
+*12 io_in[1]
+*13 io_in[20]
+*14 io_in[21]
+*15 io_in[22]
+*16 io_in[23]
+*17 io_in[24]
+*18 io_in[25]
+*19 io_in[26]
+*20 io_in[27]
+*21 io_in[28]
+*22 io_in[29]
+*23 io_in[2]
+*24 io_in[30]
+*25 io_in[31]
+*26 io_in[32]
+*27 io_in[33]
+*28 io_in[34]
+*29 io_in[35]
+*30 io_in[36]
+*31 io_in[37]
+*32 io_in[3]
+*33 io_in[4]
+*34 io_in[5]
+*35 io_in[6]
+*36 io_in[7]
+*37 io_in[8]
+*38 io_in[9]
+*39 io_oeb[0]
+*40 io_oeb[10]
+*41 io_oeb[11]
+*42 io_oeb[12]
+*43 io_oeb[13]
+*44 io_oeb[14]
+*45 io_oeb[15]
+*46 io_oeb[16]
+*47 io_oeb[17]
+*48 io_oeb[18]
+*49 io_oeb[19]
+*50 io_oeb[1]
+*51 io_oeb[20]
+*52 io_oeb[21]
+*53 io_oeb[22]
+*54 io_oeb[23]
+*55 io_oeb[24]
+*56 io_oeb[25]
+*57 io_oeb[26]
+*58 io_oeb[27]
+*59 io_oeb[28]
+*60 io_oeb[29]
+*61 io_oeb[2]
+*62 io_oeb[30]
+*63 io_oeb[31]
+*64 io_oeb[32]
+*65 io_oeb[33]
+*66 io_oeb[34]
+*67 io_oeb[35]
+*68 io_oeb[36]
+*69 io_oeb[37]
+*70 io_oeb[3]
+*71 io_oeb[4]
+*72 io_oeb[5]
+*73 io_oeb[6]
+*74 io_oeb[7]
+*75 io_oeb[8]
+*76 io_oeb[9]
+*77 io_out[0]
+*78 io_out[10]
+*79 io_out[11]
+*80 io_out[12]
+*81 io_out[13]
+*82 io_out[14]
+*83 io_out[15]
+*84 io_out[16]
+*85 io_out[17]
+*86 io_out[18]
+*87 io_out[19]
+*88 io_out[1]
+*89 io_out[20]
+*90 io_out[21]
+*91 io_out[22]
+*92 io_out[23]
+*93 io_out[24]
+*94 io_out[25]
+*95 io_out[26]
+*96 io_out[27]
+*97 io_out[28]
+*98 io_out[29]
+*99 io_out[2]
+*100 io_out[30]
+*101 io_out[31]
+*102 io_out[32]
+*103 io_out[33]
+*104 io_out[34]
+*105 io_out[35]
+*106 io_out[36]
+*107 io_out[37]
+*108 io_out[3]
+*109 io_out[4]
+*110 io_out[5]
+*111 io_out[6]
+*112 io_out[7]
+*113 io_out[8]
+*114 io_out[9]
+*115 la_data_in[0]
+*116 la_data_in[10]
+*117 la_data_in[11]
+*118 la_data_in[12]
+*119 la_data_in[13]
+*120 la_data_in[14]
+*121 la_data_in[15]
+*122 la_data_in[16]
+*123 la_data_in[17]
+*124 la_data_in[18]
+*125 la_data_in[19]
+*126 la_data_in[1]
+*127 la_data_in[20]
+*128 la_data_in[21]
+*129 la_data_in[22]
+*130 la_data_in[23]
+*131 la_data_in[24]
+*132 la_data_in[25]
+*133 la_data_in[26]
+*134 la_data_in[27]
+*135 la_data_in[28]
+*136 la_data_in[29]
+*137 la_data_in[2]
+*138 la_data_in[30]
+*139 la_data_in[31]
+*140 la_data_in[32]
+*141 la_data_in[33]
+*142 la_data_in[34]
+*143 la_data_in[35]
+*144 la_data_in[36]
+*145 la_data_in[37]
+*146 la_data_in[38]
+*147 la_data_in[39]
+*148 la_data_in[3]
+*149 la_data_in[40]
+*150 la_data_in[41]
+*151 la_data_in[42]
+*152 la_data_in[43]
+*153 la_data_in[44]
+*154 la_data_in[45]
+*155 la_data_in[46]
+*156 la_data_in[47]
+*157 la_data_in[48]
+*158 la_data_in[49]
+*159 la_data_in[4]
+*160 la_data_in[50]
+*161 la_data_in[51]
+*162 la_data_in[52]
+*163 la_data_in[53]
+*164 la_data_in[54]
+*165 la_data_in[55]
+*166 la_data_in[56]
+*167 la_data_in[57]
+*168 la_data_in[58]
+*169 la_data_in[59]
+*170 la_data_in[5]
+*171 la_data_in[60]
+*172 la_data_in[61]
+*173 la_data_in[62]
+*174 la_data_in[63]
+*175 la_data_in[6]
+*176 la_data_in[7]
+*177 la_data_in[8]
+*178 la_data_in[9]
+*179 la_data_out[0]
+*180 la_data_out[10]
+*181 la_data_out[11]
+*182 la_data_out[12]
+*183 la_data_out[13]
+*184 la_data_out[14]
+*185 la_data_out[15]
+*186 la_data_out[16]
+*187 la_data_out[17]
+*188 la_data_out[18]
+*189 la_data_out[19]
+*190 la_data_out[1]
+*191 la_data_out[20]
+*192 la_data_out[21]
+*193 la_data_out[22]
+*194 la_data_out[23]
+*195 la_data_out[24]
+*196 la_data_out[25]
+*197 la_data_out[26]
+*198 la_data_out[27]
+*199 la_data_out[28]
+*200 la_data_out[29]
+*201 la_data_out[2]
+*202 la_data_out[30]
+*203 la_data_out[31]
+*204 la_data_out[32]
+*205 la_data_out[33]
+*206 la_data_out[34]
+*207 la_data_out[35]
+*208 la_data_out[36]
+*209 la_data_out[37]
+*210 la_data_out[38]
+*211 la_data_out[39]
+*212 la_data_out[3]
+*213 la_data_out[40]
+*214 la_data_out[41]
+*215 la_data_out[42]
+*216 la_data_out[43]
+*217 la_data_out[44]
+*218 la_data_out[45]
+*219 la_data_out[46]
+*220 la_data_out[47]
+*221 la_data_out[48]
+*222 la_data_out[49]
+*223 la_data_out[4]
+*224 la_data_out[50]
+*225 la_data_out[51]
+*226 la_data_out[52]
+*227 la_data_out[53]
+*228 la_data_out[54]
+*229 la_data_out[55]
+*230 la_data_out[56]
+*231 la_data_out[57]
+*232 la_data_out[58]
+*233 la_data_out[59]
+*234 la_data_out[5]
+*235 la_data_out[60]
+*236 la_data_out[61]
+*237 la_data_out[62]
+*238 la_data_out[63]
+*239 la_data_out[6]
+*240 la_data_out[7]
+*241 la_data_out[8]
+*242 la_data_out[9]
+*243 la_oenb[0]
+*244 la_oenb[10]
+*245 la_oenb[11]
+*246 la_oenb[12]
+*247 la_oenb[13]
+*248 la_oenb[14]
+*249 la_oenb[15]
+*250 la_oenb[16]
+*251 la_oenb[17]
+*252 la_oenb[18]
+*253 la_oenb[19]
+*254 la_oenb[1]
+*255 la_oenb[20]
+*256 la_oenb[21]
+*257 la_oenb[22]
+*258 la_oenb[23]
+*259 la_oenb[24]
+*260 la_oenb[25]
+*261 la_oenb[26]
+*262 la_oenb[27]
+*263 la_oenb[28]
+*264 la_oenb[29]
+*265 la_oenb[2]
+*266 la_oenb[30]
+*267 la_oenb[31]
+*268 la_oenb[32]
+*269 la_oenb[33]
+*270 la_oenb[34]
+*271 la_oenb[35]
+*272 la_oenb[36]
+*273 la_oenb[37]
+*274 la_oenb[38]
+*275 la_oenb[39]
+*276 la_oenb[3]
+*277 la_oenb[40]
+*278 la_oenb[41]
+*279 la_oenb[42]
+*280 la_oenb[43]
+*281 la_oenb[44]
+*282 la_oenb[45]
+*283 la_oenb[46]
+*284 la_oenb[47]
+*285 la_oenb[48]
+*286 la_oenb[49]
+*287 la_oenb[4]
+*288 la_oenb[50]
+*289 la_oenb[51]
+*290 la_oenb[52]
+*291 la_oenb[53]
+*292 la_oenb[54]
+*293 la_oenb[55]
+*294 la_oenb[56]
+*295 la_oenb[57]
+*296 la_oenb[58]
+*297 la_oenb[59]
+*298 la_oenb[5]
+*299 la_oenb[60]
+*300 la_oenb[61]
+*301 la_oenb[62]
+*302 la_oenb[63]
+*303 la_oenb[6]
+*304 la_oenb[7]
+*305 la_oenb[8]
+*306 la_oenb[9]
+*307 user_clock2
+*308 user_irq[0]
+*309 user_irq[1]
+*310 user_irq[2]
+*313 wb_clk_i
+*314 wb_rst_i
+*315 wbs_ack_o
+*316 wbs_adr_i[0]
+*317 wbs_adr_i[10]
+*318 wbs_adr_i[11]
+*319 wbs_adr_i[12]
+*320 wbs_adr_i[13]
+*321 wbs_adr_i[14]
+*322 wbs_adr_i[15]
+*323 wbs_adr_i[16]
+*324 wbs_adr_i[17]
+*325 wbs_adr_i[18]
+*326 wbs_adr_i[19]
+*327 wbs_adr_i[1]
+*328 wbs_adr_i[20]
+*329 wbs_adr_i[21]
+*330 wbs_adr_i[22]
+*331 wbs_adr_i[23]
+*332 wbs_adr_i[24]
+*333 wbs_adr_i[25]
+*334 wbs_adr_i[26]
+*335 wbs_adr_i[27]
+*336 wbs_adr_i[28]
+*337 wbs_adr_i[29]
+*338 wbs_adr_i[2]
+*339 wbs_adr_i[30]
+*340 wbs_adr_i[31]
+*341 wbs_adr_i[3]
+*342 wbs_adr_i[4]
+*343 wbs_adr_i[5]
+*344 wbs_adr_i[6]
+*345 wbs_adr_i[7]
+*346 wbs_adr_i[8]
+*347 wbs_adr_i[9]
+*348 wbs_cyc_i
+*349 wbs_dat_i[0]
+*350 wbs_dat_i[10]
+*351 wbs_dat_i[11]
+*352 wbs_dat_i[12]
+*353 wbs_dat_i[13]
+*354 wbs_dat_i[14]
+*355 wbs_dat_i[15]
+*356 wbs_dat_i[16]
+*357 wbs_dat_i[17]
+*358 wbs_dat_i[18]
+*359 wbs_dat_i[19]
+*360 wbs_dat_i[1]
+*361 wbs_dat_i[20]
+*362 wbs_dat_i[21]
+*363 wbs_dat_i[22]
+*364 wbs_dat_i[23]
+*365 wbs_dat_i[24]
+*366 wbs_dat_i[25]
+*367 wbs_dat_i[26]
+*368 wbs_dat_i[27]
+*369 wbs_dat_i[28]
+*370 wbs_dat_i[29]
+*371 wbs_dat_i[2]
+*372 wbs_dat_i[30]
+*373 wbs_dat_i[31]
+*374 wbs_dat_i[3]
+*375 wbs_dat_i[4]
+*376 wbs_dat_i[5]
+*377 wbs_dat_i[6]
+*378 wbs_dat_i[7]
+*379 wbs_dat_i[8]
+*380 wbs_dat_i[9]
+*381 wbs_dat_o[0]
+*382 wbs_dat_o[10]
+*383 wbs_dat_o[11]
+*384 wbs_dat_o[12]
+*385 wbs_dat_o[13]
+*386 wbs_dat_o[14]
+*387 wbs_dat_o[15]
+*388 wbs_dat_o[16]
+*389 wbs_dat_o[17]
+*390 wbs_dat_o[18]
+*391 wbs_dat_o[19]
+*392 wbs_dat_o[1]
+*393 wbs_dat_o[20]
+*394 wbs_dat_o[21]
+*395 wbs_dat_o[22]
+*396 wbs_dat_o[23]
+*397 wbs_dat_o[24]
+*398 wbs_dat_o[25]
+*399 wbs_dat_o[26]
+*400 wbs_dat_o[27]
+*401 wbs_dat_o[28]
+*402 wbs_dat_o[29]
+*403 wbs_dat_o[2]
+*404 wbs_dat_o[30]
+*405 wbs_dat_o[31]
+*406 wbs_dat_o[3]
+*407 wbs_dat_o[4]
+*408 wbs_dat_o[5]
+*409 wbs_dat_o[6]
+*410 wbs_dat_o[7]
+*411 wbs_dat_o[8]
+*412 wbs_dat_o[9]
+*413 wbs_sel_i[0]
+*414 wbs_sel_i[1]
+*415 wbs_sel_i[2]
+*416 wbs_sel_i[3]
+*417 wbs_stb_i
+*418 wbs_we_i
+*419 solo_squash_caravel_gf180
+
+*PORTS
+io_in[0] I
+io_in[10] I
+io_in[11] I
+io_in[12] I
+io_in[13] I
+io_in[14] I
+io_in[15] I
+io_in[16] I
+io_in[17] I
+io_in[18] I
+io_in[19] I
+io_in[1] I
+io_in[20] I
+io_in[21] I
+io_in[22] I
+io_in[23] I
+io_in[24] I
+io_in[25] I
+io_in[26] I
+io_in[27] I
+io_in[28] I
+io_in[29] I
+io_in[2] I
+io_in[30] I
+io_in[31] I
+io_in[32] I
+io_in[33] I
+io_in[34] I
+io_in[35] I
+io_in[36] I
+io_in[37] I
+io_in[3] I
+io_in[4] I
+io_in[5] I
+io_in[6] I
+io_in[7] I
+io_in[8] I
+io_in[9] I
+io_oeb[0] O
+io_oeb[10] O
+io_oeb[11] O
+io_oeb[12] O
+io_oeb[13] O
+io_oeb[14] O
+io_oeb[15] O
+io_oeb[16] O
+io_oeb[17] O
+io_oeb[18] O
+io_oeb[19] O
+io_oeb[1] O
+io_oeb[20] O
+io_oeb[21] O
+io_oeb[22] O
+io_oeb[23] O
+io_oeb[24] O
+io_oeb[25] O
+io_oeb[26] O
+io_oeb[27] O
+io_oeb[28] O
+io_oeb[29] O
+io_oeb[2] O
+io_oeb[30] O
+io_oeb[31] O
+io_oeb[32] O
+io_oeb[33] O
+io_oeb[34] O
+io_oeb[35] O
+io_oeb[36] O
+io_oeb[37] O
+io_oeb[3] O
+io_oeb[4] O
+io_oeb[5] O
+io_oeb[6] O
+io_oeb[7] O
+io_oeb[8] O
+io_oeb[9] O
+io_out[0] O
+io_out[10] O
+io_out[11] O
+io_out[12] O
+io_out[13] O
+io_out[14] O
+io_out[15] O
+io_out[16] O
+io_out[17] O
+io_out[18] O
+io_out[19] O
+io_out[1] O
+io_out[20] O
+io_out[21] O
+io_out[22] O
+io_out[23] O
+io_out[24] O
+io_out[25] O
+io_out[26] O
+io_out[27] O
+io_out[28] O
+io_out[29] O
+io_out[2] O
+io_out[30] O
+io_out[31] O
+io_out[32] O
+io_out[33] O
+io_out[34] O
+io_out[35] O
+io_out[36] O
+io_out[37] O
+io_out[3] O
+io_out[4] O
+io_out[5] O
+io_out[6] O
+io_out[7] O
+io_out[8] O
+io_out[9] O
+la_data_in[0] I
+la_data_in[10] I
+la_data_in[11] I
+la_data_in[12] I
+la_data_in[13] I
+la_data_in[14] I
+la_data_in[15] I
+la_data_in[16] I
+la_data_in[17] I
+la_data_in[18] I
+la_data_in[19] I
+la_data_in[1] I
+la_data_in[20] I
+la_data_in[21] I
+la_data_in[22] I
+la_data_in[23] I
+la_data_in[24] I
+la_data_in[25] I
+la_data_in[26] I
+la_data_in[27] I
+la_data_in[28] I
+la_data_in[29] I
+la_data_in[2] I
+la_data_in[30] I
+la_data_in[31] I
+la_data_in[32] I
+la_data_in[33] I
+la_data_in[34] I
+la_data_in[35] I
+la_data_in[36] I
+la_data_in[37] I
+la_data_in[38] I
+la_data_in[39] I
+la_data_in[3] I
+la_data_in[40] I
+la_data_in[41] I
+la_data_in[42] I
+la_data_in[43] I
+la_data_in[44] I
+la_data_in[45] I
+la_data_in[46] I
+la_data_in[47] I
+la_data_in[48] I
+la_data_in[49] I
+la_data_in[4] I
+la_data_in[50] I
+la_data_in[51] I
+la_data_in[52] I
+la_data_in[53] I
+la_data_in[54] I
+la_data_in[55] I
+la_data_in[56] I
+la_data_in[57] I
+la_data_in[58] I
+la_data_in[59] I
+la_data_in[5] I
+la_data_in[60] I
+la_data_in[61] I
+la_data_in[62] I
+la_data_in[63] I
+la_data_in[6] I
+la_data_in[7] I
+la_data_in[8] I
+la_data_in[9] I
+la_data_out[0] O
+la_data_out[10] O
+la_data_out[11] O
+la_data_out[12] O
+la_data_out[13] O
+la_data_out[14] O
+la_data_out[15] O
+la_data_out[16] O
+la_data_out[17] O
+la_data_out[18] O
+la_data_out[19] O
+la_data_out[1] O
+la_data_out[20] O
+la_data_out[21] O
+la_data_out[22] O
+la_data_out[23] O
+la_data_out[24] O
+la_data_out[25] O
+la_data_out[26] O
+la_data_out[27] O
+la_data_out[28] O
+la_data_out[29] O
+la_data_out[2] O
+la_data_out[30] O
+la_data_out[31] O
+la_data_out[32] O
+la_data_out[33] O
+la_data_out[34] O
+la_data_out[35] O
+la_data_out[36] O
+la_data_out[37] O
+la_data_out[38] O
+la_data_out[39] O
+la_data_out[3] O
+la_data_out[40] O
+la_data_out[41] O
+la_data_out[42] O
+la_data_out[43] O
+la_data_out[44] O
+la_data_out[45] O
+la_data_out[46] O
+la_data_out[47] O
+la_data_out[48] O
+la_data_out[49] O
+la_data_out[4] O
+la_data_out[50] O
+la_data_out[51] O
+la_data_out[52] O
+la_data_out[53] O
+la_data_out[54] O
+la_data_out[55] O
+la_data_out[56] O
+la_data_out[57] O
+la_data_out[58] O
+la_data_out[59] O
+la_data_out[5] O
+la_data_out[60] O
+la_data_out[61] O
+la_data_out[62] O
+la_data_out[63] O
+la_data_out[6] O
+la_data_out[7] O
+la_data_out[8] O
+la_data_out[9] O
+la_oenb[0] I
+la_oenb[10] I
+la_oenb[11] I
+la_oenb[12] I
+la_oenb[13] I
+la_oenb[14] I
+la_oenb[15] I
+la_oenb[16] I
+la_oenb[17] I
+la_oenb[18] I
+la_oenb[19] I
+la_oenb[1] I
+la_oenb[20] I
+la_oenb[21] I
+la_oenb[22] I
+la_oenb[23] I
+la_oenb[24] I
+la_oenb[25] I
+la_oenb[26] I
+la_oenb[27] I
+la_oenb[28] I
+la_oenb[29] I
+la_oenb[2] I
+la_oenb[30] I
+la_oenb[31] I
+la_oenb[32] I
+la_oenb[33] I
+la_oenb[34] I
+la_oenb[35] I
+la_oenb[36] I
+la_oenb[37] I
+la_oenb[38] I
+la_oenb[39] I
+la_oenb[3] I
+la_oenb[40] I
+la_oenb[41] I
+la_oenb[42] I
+la_oenb[43] I
+la_oenb[44] I
+la_oenb[45] I
+la_oenb[46] I
+la_oenb[47] I
+la_oenb[48] I
+la_oenb[49] I
+la_oenb[4] I
+la_oenb[50] I
+la_oenb[51] I
+la_oenb[52] I
+la_oenb[53] I
+la_oenb[54] I
+la_oenb[55] I
+la_oenb[56] I
+la_oenb[57] I
+la_oenb[58] I
+la_oenb[59] I
+la_oenb[5] I
+la_oenb[60] I
+la_oenb[61] I
+la_oenb[62] I
+la_oenb[63] I
+la_oenb[6] I
+la_oenb[7] I
+la_oenb[8] I
+la_oenb[9] I
+user_clock2 I
+user_irq[0] O
+user_irq[1] O
+user_irq[2] O
+wb_clk_i I
+wb_rst_i I
+wbs_ack_o O
+wbs_adr_i[0] I
+wbs_adr_i[10] I
+wbs_adr_i[11] I
+wbs_adr_i[12] I
+wbs_adr_i[13] I
+wbs_adr_i[14] I
+wbs_adr_i[15] I
+wbs_adr_i[16] I
+wbs_adr_i[17] I
+wbs_adr_i[18] I
+wbs_adr_i[19] I
+wbs_adr_i[1] I
+wbs_adr_i[20] I
+wbs_adr_i[21] I
+wbs_adr_i[22] I
+wbs_adr_i[23] I
+wbs_adr_i[24] I
+wbs_adr_i[25] I
+wbs_adr_i[26] I
+wbs_adr_i[27] I
+wbs_adr_i[28] I
+wbs_adr_i[29] I
+wbs_adr_i[2] I
+wbs_adr_i[30] I
+wbs_adr_i[31] I
+wbs_adr_i[3] I
+wbs_adr_i[4] I
+wbs_adr_i[5] I
+wbs_adr_i[6] I
+wbs_adr_i[7] I
+wbs_adr_i[8] I
+wbs_adr_i[9] I
+wbs_cyc_i I
+wbs_dat_i[0] I
+wbs_dat_i[10] I
+wbs_dat_i[11] I
+wbs_dat_i[12] I
+wbs_dat_i[13] I
+wbs_dat_i[14] I
+wbs_dat_i[15] I
+wbs_dat_i[16] I
+wbs_dat_i[17] I
+wbs_dat_i[18] I
+wbs_dat_i[19] I
+wbs_dat_i[1] I
+wbs_dat_i[20] I
+wbs_dat_i[21] I
+wbs_dat_i[22] I
+wbs_dat_i[23] I
+wbs_dat_i[24] I
+wbs_dat_i[25] I
+wbs_dat_i[26] I
+wbs_dat_i[27] I
+wbs_dat_i[28] I
+wbs_dat_i[29] I
+wbs_dat_i[2] I
+wbs_dat_i[30] I
+wbs_dat_i[31] I
+wbs_dat_i[3] I
+wbs_dat_i[4] I
+wbs_dat_i[5] I
+wbs_dat_i[6] I
+wbs_dat_i[7] I
+wbs_dat_i[8] I
+wbs_dat_i[9] I
+wbs_dat_o[0] O
+wbs_dat_o[10] O
+wbs_dat_o[11] O
+wbs_dat_o[12] O
+wbs_dat_o[13] O
+wbs_dat_o[14] O
+wbs_dat_o[15] O
+wbs_dat_o[16] O
+wbs_dat_o[17] O
+wbs_dat_o[18] O
+wbs_dat_o[19] O
+wbs_dat_o[1] O
+wbs_dat_o[20] O
+wbs_dat_o[21] O
+wbs_dat_o[22] O
+wbs_dat_o[23] O
+wbs_dat_o[24] O
+wbs_dat_o[25] O
+wbs_dat_o[26] O
+wbs_dat_o[27] O
+wbs_dat_o[28] O
+wbs_dat_o[29] O
+wbs_dat_o[2] O
+wbs_dat_o[30] O
+wbs_dat_o[31] O
+wbs_dat_o[3] O
+wbs_dat_o[4] O
+wbs_dat_o[5] O
+wbs_dat_o[6] O
+wbs_dat_o[7] O
+wbs_dat_o[8] O
+wbs_dat_o[9] O
+wbs_sel_i[0] I
+wbs_sel_i[1] I
+wbs_sel_i[2] I
+wbs_sel_i[3] I
+wbs_stb_i I
+wbs_we_i I
+
+*D_NET *2 0.251576
+*CONN
+*P io_in[10] I
+*I *419:new_game_n I *D solo_squash_caravel_gf180
+*CAP
+1 io_in[10] 0.0712682
+2 *419:new_game_n 0.000537727
+3 *2:9 0.0133887
+4 *2:7 0.0128509
+5 *2:5 0.0712682
+6 *419:new_game_n *86:7 0.000116366
+7 *2:9 *40:9 0.082146
+*RES
+1 io_in[10] *2:5 569.205 
+2 *2:5 *2:7 4.5 
+3 *2:7 *2:9 203.67 
+4 *2:9 *419:new_game_n 8.685 
+*END
+
+*D_NET *3 0.209988
+*CONN
+*P io_in[11] I
+*I *419:down_key_n I *D solo_squash_caravel_gf180
+*CAP
+1 io_in[11] 0.00139092
+2 *419:down_key_n 0.000104732
+3 *3:17 0.0335835
+4 *3:15 0.0334787
+5 *3:13 0.0698609
+6 *3:11 0.0712518
+7 *419:down_key_n *419:up_key_n 3.24247e-05
+8 *3:11 *42:9 0.000285469
+*RES
+1 io_in[11] *3:11 19.755 
+2 *3:11 *3:13 558.99 
+3 *3:13 *3:15 4.5 
+4 *3:15 *3:17 271.35 
+5 *3:17 *419:down_key_n 5.445 
+*END
+
+*D_NET *4 0.389345
+*CONN
+*P io_in[12] I
+*I *419:up_key_n I *D solo_squash_caravel_gf180
+*CAP
+1 io_in[12] 0.0711484
+2 *419:up_key_n 0.000473268
+3 *4:9 0.00784473
+4 *4:7 0.00737146
+5 *4:5 0.0711484
+6 *4:9 *40:9 0.102826
+7 *4:9 *41:9 0.1285
+8 *419:down_key_n *419:up_key_n 3.24247e-05
+*RES
+1 io_in[12] *4:5 568.845 
+2 *4:5 *4:7 4.5 
+3 *4:7 *4:9 339.75 
+4 *4:9 *419:up_key_n 8.325 
+*END
+
+*D_NET *37 0.159561
+*CONN
+*P io_in[8] I
+*I *419:ext_reset_n I *D solo_squash_caravel_gf180
+*CAP
+1 io_in[8] 0.000982793
+2 *419:ext_reset_n 0.0614002
+3 *37:11 0.0614002
+4 *37:9 0.00468364
+5 *37:7 0.00566643
+6 *419:ext_reset_n *419:wb_rst_i 6.32871e-05
+7 *37:9 *74:9 0.0213027
+8 *37:9 *76:9 0.00406125
+*RES
+1 io_in[8] *37:7 11.745 
+2 *37:7 *37:9 74.07 
+3 *37:9 *37:11 4.5 
+4 *37:11 *419:ext_reset_n 490.905 
+*END
+
+*D_NET *38 0.272169
+*CONN
+*P io_in[9] I
+*I *419:pause_n I *D solo_squash_caravel_gf180
+*CAP
+1 io_in[9] 0.00139545
+2 *419:pause_n 0.00033996
+3 *38:13 0.049043
+4 *38:11 0.048703
+5 *38:9 0.0238072
+6 *38:7 0.0252027
+7 *419:pause_n *85:7 8.62694e-05
+8 *38:9 *43:9 0.000215596
+9 *38:9 *44:9 0.0135701
+10 *38:13 *75:9 0.109806
+*RES
+1 io_in[9] *38:7 12.825 
+2 *38:7 *38:9 182.79 
+3 *38:9 *38:11 4.5 
+4 *38:11 *38:13 524.43 
+5 *38:13 *419:pause_n 7.425 
+*END
+
+*D_NET *39 0.314555
+*CONN
+*P io_oeb[0] O
+*I *419:io_oeb[0] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[0] 0.0614535
+2 *419:io_oeb[0] 0.00063032
+3 *39:11 0.0614535
+4 *39:9 0.025614
+5 *39:7 0.0262444
+6 *39:7 *62:17 7.98864e-05
+7 *39:9 *59:9 0.00217862
+8 *39:9 *61:9 0.114226
+9 *39:9 *65:9 0.00985604
+10 *39:9 *66:9 0.00235254
+11 *39:9 *68:9 0
+12 *39:9 *69:9 0
+13 *39:9 *82:9 0.0104666
+*RES
+1 *419:io_oeb[0] *39:7 8.505 
+2 *39:7 *39:9 410.49 
+3 *39:9 *39:11 4.5 
+4 *39:11 io_oeb[0] 494.145 
+*END
+
+*D_NET *40 0.343036
+*CONN
+*P io_oeb[10] O
+*I *419:io_oeb[10] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[10] 0.0712297
+2 *419:io_oeb[10] 0.000459205
+3 *40:11 0.0712297
+4 *40:9 0.0052198
+5 *40:7 0.005679
+6 *40:7 *72:9 0.000123468
+7 *40:9 *41:9 0.0041229
+8 *2:9 *40:9 0.082146
+9 *4:9 *40:9 0.102826
+*RES
+1 *419:io_oeb[10] *40:7 8.505 
+2 *40:7 *40:9 276.57 
+3 *40:9 *40:11 4.5 
+4 *40:11 io_oeb[10] 569.025 
+*END
+
+*D_NET *41 0.347396
+*CONN
+*P io_oeb[11] O
+*I *419:io_oeb[11] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[11] 0.0711166
+2 *419:io_oeb[11] 0.000393663
+3 *41:11 0.0711166
+4 *41:9 0.0219406
+5 *41:7 0.0223342
+6 *41:7 *67:7 0.000121737
+7 *41:9 *72:9 0.00127364
+8 *41:9 *86:9 0.0264763
+9 *4:9 *41:9 0.1285
+10 *40:9 *41:9 0.0041229
+*RES
+1 *419:io_oeb[11] *41:7 8.145 
+2 *41:7 *41:9 344.43 
+3 *41:9 *41:11 4.5 
+4 *41:11 io_oeb[11] 568.665 
+*END
+
+*D_NET *42 0.384292
+*CONN
+*P io_oeb[12] O
+*I *419:io_oeb[12] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[12] 0.00104753
+2 *419:io_oeb[12] 0.0764037
+3 *42:9 0.0133309
+4 *42:7 0.0122834
+5 *42:5 0.0764037
+6 *42:5 *53:11 6.1883e-05
+7 *42:5 *61:7 5.97643e-05
+8 *42:9 *76:9 0.0636114
+9 *42:9 *81:9 0.140804
+10 *3:11 *42:9 0.000285469
+*RES
+1 *419:io_oeb[12] *42:5 490.365 
+2 *42:5 *42:7 4.5 
+3 *42:7 *42:9 348.75 
+4 *42:9 io_oeb[12] 12.285 
+*END
+
+*D_NET *43 0.485198
+*CONN
+*P io_oeb[13] O
+*I *419:io_oeb[13] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[13] 0.00109069
+2 *419:io_oeb[13] 0.0530059
+3 *43:9 0.00381135
+4 *43:7 0.00272066
+5 *43:5 0.0530059
+6 *43:5 *48:5 0.0029893
+7 *43:5 *83:5 0.0146904
+8 *43:9 *44:9 0.181364
+9 *43:9 *76:9 0.000873225
+10 *43:9 *81:9 0.171432
+11 *38:9 *43:9 0.000215596
+*RES
+1 *419:io_oeb[13] *43:5 490.005 
+2 *43:5 *43:7 4.5 
+3 *43:7 *43:9 452.43 
+4 *43:9 io_oeb[13] 12.645 
+*END
+
+*D_NET *44 0.393326
+*CONN
+*P io_oeb[14] O
+*I *419:io_oeb[14] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[14] 0.00111227
+2 *419:io_oeb[14] 0.0503249
+3 *44:9 0.0371164
+4 *44:7 0.0360042
+5 *44:5 0.0503249
+6 *44:5 *45:5 0.0135237
+7 *44:5 *46:5 0.00998567
+8 *38:9 *44:9 0.0135701
+9 *43:9 *44:9 0.181364
+*RES
+1 *419:io_oeb[14] *44:5 489.825 
+2 *44:5 *44:7 4.5 
+3 *44:7 *44:9 512.91 
+4 *44:9 io_oeb[14] 12.825 
+*END
+
+*D_NET *45 0.239624
+*CONN
+*P io_oeb[15] O
+*I *419:io_oeb[15] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[15] 0.0678732
+2 *419:io_oeb[15] 0.0419294
+3 *45:7 0.0678732
+4 *45:5 0.0419294
+5 *45:5 *47:5 0.00649509
+6 *44:5 *45:5 0.0135237
+*RES
+1 *419:io_oeb[15] *45:5 409.545 
+2 *45:5 *45:7 4.5 
+3 *45:7 io_oeb[15] 523.125 
+*END
+
+*D_NET *46 0.213336
+*CONN
+*P io_oeb[16] O
+*I *419:io_oeb[16] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[16] 0.068197
+2 *419:io_oeb[16] 0.0319849
+3 *46:7 0.068197
+4 *46:5 0.0319849
+5 *46:5 *48:5 0.00298644
+6 *44:5 *46:5 0.00998567
+*RES
+1 *419:io_oeb[16] *46:5 303.165 
+2 *46:5 *46:7 4.5 
+3 *46:7 io_oeb[16] 525.285 
+*END
+
+*D_NET *47 0.185818
+*CONN
+*P io_oeb[17] O
+*I *419:io_oeb[17] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[17] 0.0677512
+2 *419:io_oeb[17] 0.0186641
+3 *47:7 0.0677512
+4 *47:5 0.0186641
+5 *47:5 *81:5 0.00649223
+6 *45:5 *47:5 0.00649509
+*RES
+1 *419:io_oeb[17] *47:5 196.965 
+2 *47:5 *47:7 4.5 
+3 *47:7 io_oeb[17] 522.045 
+*END
+
+*D_NET *48 0.159823
+*CONN
+*P io_oeb[18] O
+*I *419:io_oeb[18] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[18] 0.0683828
+2 *419:io_oeb[18] 0.00854082
+3 *48:7 0.0683828
+4 *48:5 0.00854082
+5 *43:5 *48:5 0.0029893
+6 *46:5 *48:5 0.00298644
+*RES
+1 *419:io_oeb[18] *48:5 90.405 
+2 *48:5 *48:7 4.5 
+3 *48:7 io_oeb[18] 526.365 
+*END
+
+*D_NET *49 0.161134
+*CONN
+*P io_oeb[19] O
+*I *419:io_oeb[19] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[19] 0.0622416
+2 *419:io_oeb[19] 0.000252847
+3 *49:21 0.0634315
+4 *49:11 0.00596303
+5 *49:9 0.00502599
+6 *49:9 *87:7 1.74192e-05
+7 *49:11 *52:9 0.0192565
+8 *49:21 *53:13 0.0042291
+9 *49:21 *89:15 0.000715605
+*RES
+1 *419:io_oeb[19] *49:9 5.535 
+2 *49:9 *49:11 52.47 
+3 *49:11 *49:21 25.65 
+4 *49:21 io_oeb[19] 479.565 
+*END
+
+*D_NET *50 0.20248
+*CONN
+*P io_oeb[1] O
+*I *419:io_oeb[1] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[1] 0.0639009
+2 *419:io_oeb[1] 0.0373391
+3 *50:7 0.0639009
+4 *50:5 0.0373391
+*RES
+1 *419:io_oeb[1] *50:5 287.505 
+2 *50:5 *50:7 4.5 
+3 *50:7 io_oeb[1] 512.145 
+*END
+
+*D_NET *51 0.156228
+*CONN
+*P io_oeb[20] O
+*I *419:io_oeb[20] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[20] 0.0626306
+2 *419:io_oeb[20] 0.000216081
+3 *51:17 0.0626306
+4 *51:15 0.0152407
+5 *51:13 0.0154568
+6 *51:13 *54:9 5.29035e-05
+*RES
+1 *419:io_oeb[20] *51:13 10.845 
+2 *51:13 *51:15 121.23 
+3 *51:15 *51:17 4.5 
+4 *51:17 io_oeb[20] 482.985 
+*END
+
+*D_NET *52 0.305492
+*CONN
+*P io_oeb[21] O
+*I *419:io_oeb[21] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[21] 0.0622308
+2 *419:io_oeb[21] 0.000100612
+3 *52:15 0.0622308
+4 *52:13 0.0110258
+5 *52:11 0.0110258
+6 *52:9 0.00131969
+7 *52:7 0.0014203
+8 *52:9 *54:9 0.0217243
+9 *52:13 *53:13 0.0233577
+10 *52:13 *54:13 0.0918
+11 *49:11 *52:9 0.0192565
+*RES
+1 *419:io_oeb[21] *52:7 4.905 
+2 *52:7 *52:9 58.95 
+3 *52:9 *52:11 4.5 
+4 *52:11 *52:13 228.87 
+5 *52:13 *52:15 4.5 
+6 *52:15 io_oeb[21] 480.105 
+*END
+
+*D_NET *53 0.24103
+*CONN
+*P io_oeb[22] O
+*I *419:io_oeb[22] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[22] 0.00107539
+2 *419:io_oeb[22] 0.00100467
+3 *53:21 0.0336756
+4 *53:19 0.0326002
+5 *53:17 0.0612316
+6 *53:15 0.0612316
+7 *53:13 0.00310154
+8 *53:11 0.00410622
+9 *53:11 *65:7 6.28143e-05
+10 *53:11 *89:9 0.00336231
+11 *53:13 *89:15 0.000395501
+12 *53:21 *89:21 0.0115339
+13 *42:5 *53:11 6.1883e-05
+14 *49:21 *53:13 0.0042291
+15 *52:13 *53:13 0.0233577
+*RES
+1 *419:io_oeb[22] *53:11 20.295 
+2 *53:11 *53:13 60.93 
+3 *53:13 *53:15 4.5 
+4 *53:15 *53:17 471.69 
+5 *53:17 *53:19 4.5 
+6 *53:19 *53:21 276.57 
+7 *53:21 io_oeb[22] 12.825 
+*END
+
+*D_NET *54 0.333362
+*CONN
+*P io_oeb[23] O
+*I *419:io_oeb[23] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[23] 0.0622379
+2 *419:io_oeb[23] 0.000167661
+3 *54:15 0.0622379
+4 *54:13 0.0410017
+5 *54:11 0.0410017
+6 *54:9 0.00648507
+7 *54:7 0.00665273
+8 *51:13 *54:9 5.29035e-05
+9 *52:9 *54:9 0.0217243
+10 *52:13 *54:13 0.0918
+*RES
+1 *419:io_oeb[23] *54:7 5.265 
+2 *54:7 *54:9 67.05 
+3 *54:9 *54:11 4.5 
+4 *54:11 *54:13 441.45 
+5 *54:13 *54:15 4.5 
+6 *54:15 io_oeb[23] 480.285 
+*END
+
+*D_NET *55 0.351438
+*CONN
+*P io_oeb[24] O
+*I *419:io_oeb[24] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[24] 0.000751969
+2 *419:io_oeb[24] 0.000589722
+3 *55:13 0.0547287
+4 *55:11 0.0539768
+5 *55:9 0.0258533
+6 *55:7 0.026443
+7 *55:9 *59:13 0.157873
+8 *55:13 *56:9 0.031221
+*RES
+1 *419:io_oeb[24] *55:7 8.685 
+2 *55:7 *55:9 398.61 
+3 *55:9 *55:11 4.5 
+4 *55:11 *55:13 416.25 
+5 *55:13 io_oeb[24] 10.665 
+*END
+
+*D_NET *56 0.304951
+*CONN
+*P io_oeb[25] O
+*I *419:io_oeb[25] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[25] 0.000758739
+2 *419:io_oeb[25] 0.0423085
+3 *56:9 0.0278658
+4 *56:7 0.0271071
+5 *56:5 0.0423085
+6 *56:5 *64:5 0.0127212
+7 *56:9 *57:9 0.12066
+8 *55:13 *56:9 0.031221
+*RES
+1 *419:io_oeb[25] *56:5 385.605 
+2 *56:5 *56:7 4.5 
+3 *56:7 *56:9 366.93 
+4 *56:9 io_oeb[25] 10.665 
+*END
+
+*D_NET *57 0.308192
+*CONN
+*P io_oeb[26] O
+*I *419:io_oeb[26] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[26] 0.00079952
+2 *419:io_oeb[26] 0.048021
+3 *57:9 0.0173295
+4 *57:7 0.01653
+5 *57:5 0.048021
+6 *57:5 *67:7 9.49227e-05
+7 *57:5 *72:9 0.000123468
+8 *57:9 *60:9 0.0356319
+9 *57:9 *64:9 0.0209806
+10 *56:9 *57:9 0.12066
+*RES
+1 *419:io_oeb[26] *57:5 385.425 
+2 *57:5 *57:7 4.5 
+3 *57:7 *57:9 349.65 
+4 *57:9 io_oeb[26] 10.845 
+*END
+
+*D_NET *58 0.192469
+*CONN
+*P io_oeb[27] O
+*I *419:io_oeb[27] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[27] 0.0507082
+2 *419:io_oeb[27] 0.00157039
+3 *58:19 0.0507082
+4 *58:17 0.02594
+5 *58:15 0.02594
+6 *58:13 0.00364503
+7 *58:11 0.00521542
+8 *58:11 *59:9 0.000929571
+9 *58:11 *62:17 6.50222e-05
+10 *58:11 *63:11 0.00212593
+11 *58:11 *65:7 6.36126e-05
+12 *58:11 *66:9 0.00301953
+13 *58:11 *82:9 2.37668e-06
+14 *58:11 *89:9 0.000250985
+15 *58:13 *59:13 0.022285
+*RES
+1 *419:io_oeb[27] *58:11 27.315 
+2 *58:11 *58:13 55.71 
+3 *58:13 *58:15 4.5 
+4 *58:15 *58:17 212.13 
+5 *58:17 *58:19 4.5 
+6 *58:19 io_oeb[27] 405.765 
+*END
+
+*D_NET *59 0.31425
+*CONN
+*P io_oeb[28] O
+*I *419:io_oeb[28] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[28] 0.00154378
+2 *419:io_oeb[28] 0.000491862
+3 *59:17 0.0192384
+4 *59:15 0.0176946
+5 *59:13 0.02889
+6 *59:11 0.02889
+7 *59:9 0.00150208
+8 *59:7 0.00199394
+9 *59:7 *419:gpio_ready 6.6111e-05
+10 *59:7 *68:7 6.70424e-05
+11 *59:9 *62:17 0.00383959
+12 *59:9 *65:9 0.0212814
+13 *59:9 *66:9 0.00116658
+14 *59:9 *82:9 0.00431869
+15 *39:9 *59:9 0.00217862
+16 *55:9 *59:13 0.157873
+17 *58:11 *59:9 0.000929571
+18 *58:13 *59:13 0.022285
+*RES
+1 *419:io_oeb[28] *59:7 7.785 
+2 *59:7 *59:9 67.23 
+3 *59:9 *59:11 4.5 
+4 *59:11 *59:13 450.45 
+5 *59:13 *59:15 4.5 
+6 *59:15 *59:17 144.27 
+7 *59:17 io_oeb[28] 16.065 
+*END
+
+*D_NET *60 0.168263
+*CONN
+*P io_oeb[29] O
+*I *419:io_oeb[29] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[29] 0.000838026
+2 *419:io_oeb[29] 0.0598564
+3 *60:9 0.00638804
+4 *60:7 0.00555002
+5 *60:5 0.0598564
+6 *60:5 *419:wb_clk_i 0.000141983
+7 *57:9 *60:9 0.0356319
+*RES
+1 *419:io_oeb[29] *60:5 385.245 
+2 *60:5 *60:7 4.5 
+3 *60:7 *60:9 88.29 
+4 *60:9 io_oeb[29] 11.025 
+*END
+
+*D_NET *61 0.276551
+*CONN
+*P io_oeb[2] O
+*I *419:io_oeb[2] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[2] 0.0614319
+2 *419:io_oeb[2] 0.000702083
+3 *61:11 0.0614319
+4 *61:9 0.0183788
+5 *61:7 0.0190809
+6 *61:7 *63:11 6.1883e-05
+7 *61:9 *82:9 0.00117801
+8 *39:9 *61:9 0.114226
+9 *42:5 *61:7 5.97643e-05
+*RES
+1 *419:io_oeb[2] *61:7 8.685 
+2 *61:7 *61:9 289.71 
+3 *61:9 *61:11 4.5 
+4 *61:11 io_oeb[2] 493.965 
+*END
+
+*D_NET *62 0.127935
+*CONN
+*P io_oeb[30] O
+*I *419:io_oeb[30] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[30] 0.0572789
+2 *419:io_oeb[30] 0.00338836
+3 *62:19 0.0572789
+4 *62:17 0.00338836
+5 *62:17 *66:7 0.000149098
+6 *62:17 *82:9 0.00177527
+7 *62:17 *89:17 0.000691959
+8 *39:7 *62:17 7.98864e-05
+9 *58:11 *62:17 6.50222e-05
+10 *59:9 *62:17 0.00383959
+*RES
+1 *419:io_oeb[30] *62:17 46.215 
+2 *62:17 *62:19 4.5 
+3 *62:19 io_oeb[30] 457.605 
+*END
+
+*D_NET *63 0.11765
+*CONN
+*P io_oeb[31] O
+*I *419:io_oeb[31] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[31] 0.00153455
+2 *419:io_oeb[31] 0.000985427
+3 *63:17 0.0067981
+4 *63:13 0.0551183
+5 *63:11 0.0508402
+6 *63:11 *66:9 0.000185139
+7 *58:11 *63:11 0.00212593
+8 *61:7 *63:11 6.1883e-05
+*RES
+1 *419:io_oeb[31] *63:11 18.0996 
+2 *63:11 *63:13 190.816 
+3 *63:13 *63:17 47.8254 
+4 *63:17 io_oeb[31] 16.065 
+*END
+
+*D_NET *64 0.140958
+*CONN
+*P io_oeb[32] O
+*I *419:io_oeb[32] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[32] 0.00100351
+2 *419:io_oeb[32] 0.0422315
+3 *64:9 0.0113968
+4 *64:7 0.0103933
+5 *64:5 0.0422315
+6 *56:5 *64:5 0.0127212
+7 *57:9 *64:9 0.0209806
+*RES
+1 *419:io_oeb[32] *64:5 385.245 
+2 *64:5 *64:7 4.5 
+3 *64:7 *64:9 110.25 
+4 *64:9 io_oeb[32] 11.025 
+*END
+
+*D_NET *65 0.228936
+*CONN
+*P io_oeb[33] O
+*I *419:io_oeb[33] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[33] 0.0577157
+2 *419:io_oeb[33] 0.000476007
+3 *65:11 0.0577157
+4 *65:9 0.00401854
+5 *65:7 0.00449455
+6 *65:9 *66:9 0.0732519
+7 *39:9 *65:9 0.00985604
+8 *53:11 *65:7 6.28143e-05
+9 *58:11 *65:7 6.36126e-05
+10 *59:9 *65:9 0.0212814
+*RES
+1 *419:io_oeb[33] *65:7 7.605 
+2 *65:7 *65:9 181.89 
+3 *65:9 *65:11 4.5 
+4 *65:11 io_oeb[33] 461.745 
+*END
+
+*D_NET *66 0.294449
+*CONN
+*P io_oeb[34] O
+*I *419:io_oeb[34] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[34] 0.0576603
+2 *419:io_oeb[34] 0.000429155
+3 *66:11 0.0576603
+4 *66:9 0.00753997
+5 *66:7 0.00796913
+6 *66:9 *68:9 0.0798588
+7 *66:9 *89:9 0.00187227
+8 *66:9 *314:13 0.00133395
+9 *39:9 *66:9 0.00235254
+10 *58:11 *66:9 0.00301953
+11 *59:9 *66:9 0.00116658
+12 *62:17 *66:7 0.000149098
+13 *63:11 *66:9 0.000185139
+14 *65:9 *66:9 0.0732519
+*RES
+1 *419:io_oeb[34] *66:7 7.425 
+2 *66:7 *66:9 256.41 
+3 *66:9 *66:11 4.5 
+4 *66:11 io_oeb[34] 461.565 
+*END
+
+*D_NET *67 0.173806
+*CONN
+*P io_oeb[35] O
+*I *419:io_oeb[35] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[35] 0.0481591
+2 *419:io_oeb[35] 0.000627262
+3 *67:11 0.0481591
+4 *67:9 0.0314504
+5 *67:7 0.0320776
+6 *67:9 *72:9 0.00136696
+7 *67:9 *313:13 0.0117484
+8 *41:7 *67:7 0.000121737
+9 *57:5 *67:7 9.49227e-05
+*RES
+1 *419:io_oeb[35] *67:7 9.405 
+2 *67:7 *67:9 261.81 
+3 *67:9 *67:11 4.5 
+4 *67:11 io_oeb[35] 386.865 
+*END
+
+*D_NET *68 0.362641
+*CONN
+*P io_oeb[36] O
+*I *419:io_oeb[36] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[36] 0.0575933
+2 *419:io_oeb[36] 0.00037242
+3 *68:11 0.0575933
+4 *68:9 0.00961652
+5 *68:7 0.00998894
+6 *68:7 *89:7 6.70424e-05
+7 *68:9 *69:9 0.13274
+8 *68:9 *115:13 0.0147441
+9 *39:9 *68:9 0
+10 *59:7 *68:7 6.70424e-05
+11 *66:9 *68:9 0.0798588
+*RES
+1 *419:io_oeb[36] *68:7 7.245 
+2 *68:7 *68:9 334.17 
+3 *68:9 *68:11 4.5 
+4 *68:11 io_oeb[36] 461.385 
+*END
+
+*D_NET *69 0.344445
+*CONN
+*P io_oeb[37] O
+*I *419:io_oeb[37] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[37] 0.0575455
+2 *419:io_oeb[37] 0.000373614
+3 *69:11 0.0575455
+4 *69:9 0.0290447
+5 *69:7 0.0294183
+6 *69:7 *74:5 6.37461e-05
+7 *69:9 *115:13 0.00239545
+8 *69:9 *314:13 0.0353179
+9 *39:9 *69:9 0
+10 *68:9 *69:9 0.13274
+*RES
+1 *419:io_oeb[37] *69:7 7.065 
+2 *69:7 *69:9 396.81 
+3 *69:9 *69:11 4.5 
+4 *69:11 io_oeb[37] 461.205 
+*END
+
+*D_NET *70 0.184153
+*CONN
+*P io_oeb[3] O
+*I *419:io_oeb[3] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[3] 0.0632656
+2 *419:io_oeb[3] 0.000171376
+3 *70:13 0.0632656
+4 *70:11 0.0286397
+5 *70:9 0.0288111
+*RES
+1 *419:io_oeb[3] *70:9 10.305 
+2 *70:9 *70:11 232.65 
+3 *70:11 *70:13 4.5 
+4 *70:13 io_oeb[3] 506.565 
+*END
+
+*D_NET *71 0.167979
+*CONN
+*P io_oeb[4] O
+*I *419:io_oeb[4] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[4] 0.0683667
+2 *419:io_oeb[4] 0.0155786
+3 *71:7 0.0683667
+4 *71:5 0.0155786
+5 *71:5 *75:7 8.86787e-05
+*RES
+1 *419:io_oeb[4] *71:5 96.345 
+2 *71:5 *71:7 4.5 
+3 *71:7 io_oeb[4] 547.785 
+*END
+
+*D_NET *72 0.154134
+*CONN
+*P io_oeb[5] O
+*I *419:io_oeb[5] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[5] 0.0710292
+2 *419:io_oeb[5] 0.00459396
+3 *72:11 0.0710292
+4 *72:9 0.00459396
+5 *40:7 *72:9 0.000123468
+6 *41:9 *72:9 0.00127364
+7 *57:5 *72:9 0.000123468
+8 *67:9 *72:9 0.00136696
+*RES
+1 *419:io_oeb[5] *72:9 49.455 
+2 *72:9 *72:11 4.5 
+3 *72:11 io_oeb[5] 568.845 
+*END
+
+*D_NET *73 0.147725
+*CONN
+*P io_oeb[6] O
+*I *419:io_oeb[6] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[6] 0.00246118
+2 *419:io_oeb[6] 0.0641768
+3 *73:5 0.0666379
+4 io_oeb[6] *74:9 0.00452666
+5 *73:5 *419:gpio_ready 6.6111e-05
+6 *73:5 *74:5 0.00985585
+*RES
+1 *419:io_oeb[6] *73:5 491.085 
+2 *73:5 io_oeb[6] 39.735 
+*END
+
+*D_NET *74 0.218952
+*CONN
+*P io_oeb[7] O
+*I *419:io_oeb[7] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[7] 0.0010213
+2 *419:io_oeb[7] 0.0716974
+3 *74:9 0.00206232
+4 *74:7 0.00104102
+5 *74:5 0.0716974
+6 *74:9 *76:9 0.0356837
+7 io_oeb[6] *74:9 0.00452666
+8 *37:9 *74:9 0.0213027
+9 *69:7 *74:5 6.37461e-05
+10 *73:5 *74:5 0.00985585
+*RES
+1 *419:io_oeb[7] *74:5 490.725 
+2 *74:5 *74:7 4.5 
+3 *74:7 *74:9 88.47 
+4 *74:9 io_oeb[7] 11.925 
+*END
+
+*D_NET *75 0.273133
+*CONN
+*P io_oeb[8] O
+*I *419:io_oeb[8] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[8] 0.0325884
+2 *419:io_oeb[8] 0.000367769
+3 *75:15 0.0325884
+4 *75:13 0.0211344
+5 *75:11 0.0211344
+6 *75:9 0.0158406
+7 *75:7 0.0162083
+8 *75:9 *85:9 0.0233766
+9 *38:13 *75:9 0.109806
+10 *71:5 *75:7 8.86787e-05
+*RES
+1 *419:io_oeb[8] *75:7 7.605 
+2 *75:7 *75:9 289.53 
+3 *75:9 *75:11 4.5 
+4 *75:11 *75:13 161.73 
+5 *75:13 *75:15 4.5 
+6 *75:15 io_oeb[8] 259.425 
+*END
+
+*D_NET *76 0.252398
+*CONN
+*P io_oeb[9] O
+*I *419:io_oeb[9] O *D solo_squash_caravel_gf180
+*CAP
+1 io_oeb[9] 0.00102595
+2 *419:io_oeb[9] 0.061168
+3 *76:9 0.00976144
+4 *76:7 0.00873549
+5 *76:5 0.061168
+6 *76:9 *81:9 0.00630949
+7 *37:9 *76:9 0.00406125
+8 *42:9 *76:9 0.0636114
+9 *43:9 *76:9 0.000873225
+10 *74:9 *76:9 0.0356837
+*RES
+1 *419:io_oeb[9] *76:5 490.545 
+2 *76:5 *76:7 4.5 
+3 *76:7 *76:9 219.15 
+4 *76:9 io_oeb[9] 12.105 
+*END
+
+*D_NET *81 0.451407
+*CONN
+*P io_out[13] O
+*I *419:red O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[13] 0.00106911
+2 *419:red 0.05802
+3 *81:9 0.00489352
+4 *81:7 0.00382441
+5 *81:5 0.05802
+6 *81:5 *84:7 0.000542748
+7 *42:9 *81:9 0.140804
+8 *43:9 *81:9 0.171432
+9 *47:5 *81:5 0.00649223
+10 *76:9 *81:9 0.00630949
+*RES
+1 *419:red *81:5 490.185 
+2 *81:5 *81:7 4.5 
+3 *81:7 *81:9 424.71 
+4 *81:9 io_out[13] 12.465 
+*END
+
+*D_NET *82 0.253329
+*CONN
+*P io_out[14] O
+*I *419:green O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[14] 0.0616213
+2 *419:green 0.000598606
+3 *82:11 0.0616213
+4 *82:9 0.0555301
+5 *82:7 0.0561287
+6 *82:7 *84:7 8.84241e-05
+7 *39:9 *82:9 0.0104666
+8 *58:11 *82:9 2.37668e-06
+9 *59:9 *82:9 0.00431869
+10 *61:9 *82:9 0.00117801
+11 *62:17 *82:9 0.00177527
+*RES
+1 *419:green *82:7 8.325 
+2 *82:7 *82:9 486.27 
+3 *82:9 *82:11 4.5 
+4 *82:11 io_out[14] 494.325 
+*END
+
+*D_NET *83 0.284208
+*CONN
+*P io_out[15] O
+*I *419:blue O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[15] 0.0859439
+2 *419:blue 0.048815
+3 *83:7 0.0859439
+4 *83:5 0.048815
+5 *43:5 *83:5 0.0146904
+*RES
+1 *419:blue *83:5 445.005 
+2 *83:5 *83:7 4.5 
+3 *83:7 io_out[15] 528.525 
+*END
+
+*D_NET *84 0.278532
+*CONN
+*P io_out[16] O
+*I *419:hsync O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[16] 0.00107539
+2 *419:hsync 0.00200065
+3 *84:13 0.0279325
+4 *84:11 0.0268572
+5 *84:9 0.0663875
+6 *84:7 0.0683881
+7 *84:13 *85:17 0.0842533
+8 *84:13 *86:13 0.00100643
+9 *81:5 *84:7 0.000542748
+10 *82:7 *84:7 8.84241e-05
+*RES
+1 *419:hsync *84:7 21.825 
+2 *84:7 *84:9 511.65 
+3 *84:9 *84:11 4.5 
+4 *84:11 *84:13 321.39 
+5 *84:13 io_out[16] 12.825 
+*END
+
+*D_NET *85 0.316087
+*CONN
+*P io_out[17] O
+*I *419:vsync O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[17] 0.0010524
+2 *419:vsync 0.000407883
+3 *85:17 0.00800382
+4 *85:15 0.00695143
+5 *85:13 0.071232
+6 *85:11 0.071232
+7 *85:9 0.00380228
+8 *85:7 0.00421017
+9 *85:17 *86:13 0.0414793
+10 *419:pause_n *85:7 8.62694e-05
+11 *75:9 *85:9 0.0233766
+12 *84:13 *85:17 0.0842533
+*RES
+1 *419:vsync *85:7 7.785 
+2 *85:7 *85:9 58.41 
+3 *85:9 *85:11 4.5 
+4 *85:11 *85:13 547.47 
+5 *85:13 *85:15 4.5 
+6 *85:15 *85:17 209.61 
+7 *85:17 io_out[17] 12.645 
+*END
+
+*D_NET *86 0.258498
+*CONN
+*P io_out[18] O
+*I *419:speaker O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[18] 0.0010294
+2 *419:speaker 0.000419925
+3 *86:13 0.014714
+4 *86:11 0.0136846
+5 *86:9 0.065735
+6 *86:7 0.0661549
+7 *86:9 *313:13 0
+8 *86:13 *89:21 0.0276818
+9 *419:new_game_n *86:7 0.000116366
+10 *41:9 *86:9 0.0264763
+11 *84:13 *86:13 0.00100643
+12 *85:17 *86:13 0.0414793
+*RES
+1 *419:speaker *86:7 8.145 
+2 *86:7 *86:9 505.53 
+3 *86:9 *86:11 4.5 
+4 *86:11 *86:13 196.47 
+5 *86:13 io_out[18] 12.465 
+*END
+
+*D_NET *87 0.143324
+*CONN
+*P io_out[19] O
+*I *419:debug_design_reset O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[19] 0.0691045
+2 *419:debug_design_reset 0.00254892
+3 *87:7 0.0716534
+4 *49:9 *87:7 1.74192e-05
+*RES
+1 *419:debug_design_reset *87:7 23.985 
+2 *87:7 io_out[19] 531.765 
+*END
+
+*D_NET *89 0.205453
+*CONN
+*P io_out[20] O
+*I *419:debug_gpio_ready O *D solo_squash_caravel_gf180
+*CAP
+1 io_out[20] 0.0010524
+2 *419:debug_gpio_ready 0.000403854
+3 *89:21 0.00572984
+4 *89:19 0.00467744
+5 *89:17 0.0611927
+6 *89:15 0.0616147
+7 *89:9 0.00600685
+8 *89:7 0.00598871
+9 *89:9 *314:13 0.0122152
+10 *49:21 *89:15 0.000715605
+11 *53:11 *89:9 0.00336231
+12 *53:13 *89:15 0.000395501
+13 *53:21 *89:21 0.0115339
+14 *58:11 *89:9 0.000250985
+15 *62:17 *89:17 0.000691959
+16 *66:9 *89:9 0.00187227
+17 *68:7 *89:7 6.70424e-05
+18 *86:13 *89:21 0.0276818
+*RES
+1 *419:debug_gpio_ready *89:7 7.245 
+2 *89:7 *89:9 60.93 
+3 *89:9 *89:15 13.41 
+4 *89:15 *89:17 471.51 
+5 *89:17 *89:19 4.5 
+6 *89:19 *89:21 85.23 
+7 *89:21 io_out[20] 12.645 
+*END
+
+*D_NET *115 0.297174
+*CONN
+*P la_data_in[0] I
+*I *419:gpio_ready I *D solo_squash_caravel_gf180
+*CAP
+1 la_data_in[0] 0.000888389
+2 *419:gpio_ready 0.000380267
+3 *115:13 0.0269531
+4 *115:11 0.0265728
+5 *115:9 0.00967003
+6 *115:7 0.0105584
+7 *115:9 *314:9 0.0450487
+8 *115:13 *314:13 0.15983
+9 *59:7 *419:gpio_ready 6.6111e-05
+10 *68:9 *115:13 0.0147441
+11 *69:9 *115:13 0.00239545
+12 *73:5 *419:gpio_ready 6.6111e-05
+*RES
+1 la_data_in[0] *115:7 11.025 
+2 *115:7 *115:9 119.25 
+3 *115:9 *115:11 4.5 
+4 *115:11 *115:13 406.71 
+5 *115:13 *419:gpio_ready 7.245 
+*END
+
+*D_NET *313 0.332927
+*CONN
+*P wb_clk_i I
+*I *419:wb_clk_i I *D solo_squash_caravel_gf180
+*CAP
+1 wb_clk_i 0.000810485
+2 *419:wb_clk_i 0.000629032
+3 *313:13 0.0606276
+4 *313:11 0.0599986
+5 *313:9 0.0297003
+6 *313:7 0.0305108
+7 *313:9 *314:9 0.13876
+8 *60:5 *419:wb_clk_i 0.000141983
+9 *67:9 *313:13 0.0117484
+10 *86:9 *313:13 0
+*RES
+1 wb_clk_i *313:7 10.665 
+2 *313:7 *313:9 368.91 
+3 *313:9 *313:11 4.5 
+4 *313:11 *313:13 462.15 
+5 *313:13 *419:wb_clk_i 9.405 
+*END
+
+*D_NET *314 0.517359
+*CONN
+*P wb_rst_i I
+*I *419:wb_rst_i I *D solo_squash_caravel_gf180
+*CAP
+1 wb_rst_i 0.000849437
+2 *419:wb_rst_i 0.000380916
+3 *314:13 0.029654
+4 *314:11 0.0292731
+5 *314:9 0.0318912
+6 *314:7 0.0327406
+7 *419:ext_reset_n *419:wb_rst_i 6.32871e-05
+8 *66:9 *314:13 0.00133395
+9 *69:9 *314:13 0.0353179
+10 *89:9 *314:13 0.0122152
+11 *115:9 *314:9 0.0450487
+12 *115:13 *314:13 0.15983
+13 *313:9 *314:9 0.13876
+*RES
+1 wb_rst_i *314:7 10.845 
+2 *314:7 *314:9 440.37 
+3 *314:9 *314:11 4.5 
+4 *314:11 *314:13 441.45 
+5 *314:13 *419:wb_rst_i 7.065 
+*END
