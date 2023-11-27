@@ -1,0 +1,32 @@
+{
+    "ROUTING_CORES": 6,
+    "KLAYOUT_XOR_THREADS": 6,
+
+	"PDK": "gf180mcuD",
+	"STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+    "DESIGN_NAME": "solo_squash_caravel_gf180",
+    "VERILOG_FILES": [
+        "dir::../../verilog/rtl/defines.v",
+        "dir::../../verilog/rtl/solo_squash_caravel_gf180.v",
+        "dir::../../verilog/rtl/solo_squash/src/solo_squash.v"
+    ],
+    "DESIGN_IS_CORE": 0,
+    "CLOCK_PORT": "wb_clk_i",
+    "CLOCK_NET": "solo_squash.clk",
+    "CLOCK_PERIOD": 40.0,
+    "FP_SIZING": "relative",
+    "FP_CORE_UTIL": 35,
+	"PL_BASIC_PLACEMENT": 0,
+	"MAX_FANOUT_CONSTRAINT": 4,
+	"RT_MAX_LAYER": "Metal4",
+	"VDD_NETS": [
+		"vdd"
+	],
+	"GND_NETS": [
+		"vss"
+	],
+    "//": "BASE_SDC_FILE=dir::base_user_proj_example.sdc",
+	"RUN_HEURISTIC_DIODE_INSERTION": 1,
+	"RUN_CVC": 1,
+	"QUIT_ON_LINTER_ERRORS": 0
+}

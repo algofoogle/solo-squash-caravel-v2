@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2020 Efabless Corporation
+// SPDX-FileCopyrightText: 2023 Anton Maurovic <anton@maurovic.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -22,16 +22,10 @@
  * This wrapper enumerates all of the pins available to the
  * user for the user project.
  *
- * An example user project is provided in this wrapper.  The
- * example should be removed and replaced with the actual
- * user project.
- *
  *-------------------------------------------------------------
  */
 
-module user_project_wrapper #(
-    parameter BITS = 32
-) (
+module user_project_wrapper (
 `ifdef USE_POWER_PINS
     inout vdd,		// User area 5.0V supply
     inout vss,		// User area ground
@@ -70,41 +64,33 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-user_proj_example mprj (
-`ifdef USE_POWER_PINS
-	.vdd(vdd),	// User area 1 1.8V power
-	.vss(vss),	// User area 1 digital ground
-`endif
-
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
-
-    // MGMT SoC Wishbone Slave
-
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
-
-    // IO Pads
-
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
-    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-
-    // IRQ
-    .irq(user_irq)
-);
+    solo_squash_caravel_gf180 solo_squash_caravel_gf180(
+    `ifdef USE_POWER_PINS
+        .vdd(vdd),	// User area 1 1.8V power
+        .vss(vss),	// User area 1 digital ground
+    `endif
+        .wb_clk_i           (wb_clk_i),
+        .wb_rst_i           (wb_rst_i),
+        .gpio_ready         (la_data_in[0]), // Input from LA controlled by VexRiscv.
+        // IO input pads:
+        .ext_reset_n        (io_in[8]),
+        .pause_n            (io_in[9]),
+        .new_game_n         (io_in[10]),
+        .down_key_n         (io_in[11]),
+        .up_key_n           (io_in[12]),
+        // IO output pads:
+        .red                (io_out[13]),
+        .green              (io_out[14]),
+        .blue               (io_out[15]),
+        .hsync              (io_out[16]),
+        .vsync              (io_out[17]),
+        .speaker            (io_out[18]),
+        // Debug outputs (also IO pads):
+        .debug_design_reset (io_out[19]),
+        .debug_gpio_ready   (io_out[20]),
+        // OEBs:
+        .io_oeb             (io_oeb)
+    );
 
 endmodule	// user_project_wrapper
 
